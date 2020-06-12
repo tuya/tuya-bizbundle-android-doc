@@ -1,7 +1,8 @@
 # Integrated Mall Biz Bundle
+
 ## Create Project
 
-    Build your project in the Android Studio and integrate Tuyasmart HomeSDK
+Build your project in the Android Studio and integrate Tuyasmart HomeSDK
 
 ## Configure the root build.gradle
 
