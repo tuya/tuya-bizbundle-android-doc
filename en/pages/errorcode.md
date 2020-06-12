@@ -1,3 +1,4 @@
 # ErrorCode
-| error | description                  |
+
+| Error | Description                  |
 |:------|:----------------------|
