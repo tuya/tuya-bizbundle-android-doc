@@ -7,4 +7,5 @@
 | 组件                           | 内容说明         | 注意 |
 | :--------------------------  | ---------------- | ---- |
 | TuyaSmartMallBizBundle       | 提供商城功能     | 可选 |
+| TuyaSmartDeviceActivatorBizBundle      | Provide Device Configuration function   | 可选 |
 
