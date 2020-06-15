@@ -50,7 +50,7 @@ This type of device is connected to the Tuya cloud service after being powered o
 
 Integrated with graffiti intelligent universal Configuration network technology to provide users with a set of fast Configuration network functions
 
-## Integrate Biz Bundle
+## Integrate
 
 ### Preparation for Integration
 
