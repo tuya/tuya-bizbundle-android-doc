@@ -8,4 +8,5 @@
 | :--------------------------  | ---------------- | ---- |
 | TuyaSmartMallBizBundle       | 提供商城功能     | 可选 |
 | TuyaSmartDeviceActivatorBizBundle      | Provide Device Configuration function   | 可选 |
+| TuyaSmartDeviceControlBizBundle      | 提供设备控制功能   | 可选 |
 

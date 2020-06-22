@@ -4,13 +4,13 @@
 
 ### assets profile
 
-**module_app.json** as a serviced profiles,Copy module_app.json to the assets folder under the app directory.[required]
+[module_app.json](https://github.com/TuyaInc/tuya_smart_bizbundle_language/blob/master/assets/) as a serviced profiles,Copy module_app.json to the assets folder under the app directory.[required]
 
-**x_platform_config.json** for Mall and Device Control Bizbundle serviced profiles，Copy x_platform_config.json to the assets folder under the app directory。[optional]
+[x_platform_config.json](https://github.com/TuyaInc/tuya_smart_bizbundle_language/blob/master/assets/) for Mall and Device Control Bizbundle serviced profiles，Copy x_platform_config.json to the assets folder under the app directory。[optional]
 
 ### res profile
 
-**res/values** multilingual resource files [optional]
+[res/values](https://github.com/TuyaInc/tuya_smart_bizbundle_language/tree/master/res) multilingual resource files [optional]
 
 ### dependent source configuration
 root build.gradle 

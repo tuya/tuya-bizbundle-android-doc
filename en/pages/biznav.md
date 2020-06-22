@@ -4,7 +4,8 @@ Tuya currently provides the following BizBundles, one or more of which can be us
 
 ## BizBundle List
 
-| BizBundle                        | Note                                         |
-| --------------------------- | ------------------------------------------------ |
-| TuyaSmartMallBizBundle      | Provide h5 mall function                                     |
-| TuyaSmartDeviceActivatorBizBundle      | Provide Device Configuration function   |
+| BizBundle                        | Note                                        | Attention
+| --------------------------- | ------------------------------------------------ | ---- |
+| TuyaSmartMallBizBundle      | Provide h5 mall function                         | optional |
+| TuyaSmartDeviceActivatorBizBundle      | Provide Device Configuration function  | optional |
+| TuyaSmartDeviceControlBizBundle      | Provide Device Control function   |   optional |
