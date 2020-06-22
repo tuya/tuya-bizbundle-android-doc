@@ -8,7 +8,7 @@
     * [Function call](./pages/mall/resource/MallFun.md)
   * [Device Configuration](./pages/activator/activator_device.md)
     * [Features](./pages/activator/activator_device.md#features)
-    * [Integrate Biz Bundle](./pages/activator/activator_device.md#integrate-biz-bundle)
+    * [Integrate](./pages/activator/activator_device.md#integrate)
     * [Function call](./pages/activator/activator_device.md#function-call)
   * [Device Control](./pages/panel/panel_device.md)
     * [Features](./pages/panel/panel_device.md#Features-Overview)

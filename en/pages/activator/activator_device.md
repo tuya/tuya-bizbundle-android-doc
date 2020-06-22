@@ -5,7 +5,7 @@
 The business functions cover all the Wi-Fi devices, ZigBee devices, Bluetooth devices, QR code scanning devices (such as GPRS & NB-IOT devices) 
 and other types of devices currently equipped with TuyaSmart APP.
 
-### 1. Wi-Fi Devices
+### Wi-Fi Devices
 
 Support Wi-Fi smart devices to connect to the cloud service.
 The Wi-Fi network configuration mainly includes two network configuration modes, namely, EZ mode and AP mode. And the camera device supports scanning QR code Configuration network.
@@ -16,7 +16,7 @@ The Wi-Fi network configuration mainly includes two network configuration modes,
 | AP mode      | Also known as hotspot mode, the mobile phone connects the smart device's hotspot. The two parties establish a Socket connection to exchange data through the agreed port. |
 | Camera scan code configuration network | The camera device obtains the distribution data information by scanning the QR code on the APP. |
 
-### 2. ZigBee Devices
+### ZigBee Devices
 
 Support ZigBee gateway and sub-device network Configuration.
 
@@ -26,7 +26,7 @@ Support ZigBee gateway and sub-device network Configuration.
 | ZigBee Gateway | The device that integrates the coordinator and WiFi functions in the ZigBee network is responsible for the establishment of the ZigBee network and the storage of data information.|
 | sub-device | Routing or terminal equipment in ZigBee network, responsible for data forwarding or terminal control response.|
 
-### 3. Bluetooth Devices
+### Bluetooth Devices
 
 Tuya Bluetooth has three technical lines, including SingleBLE, SigMesh, TuyaMesh, and dual-mode devices.
 
@@ -37,7 +37,7 @@ Tuya Bluetooth has three technical lines, including SingleBLE, SigMesh, TuyaMesh
 | TuyaMesh    | Adopting Tuya's self-developed Bluetooth topology communication |
 | Dual-mode Device     | Support multi-protocol devices, ie devices with both Wi-Fi and BLE capabilities |
 
-### 4. Scanning code network Configuration Devices
+### Scanning code network Configuration Devices
 
 This type of device is connected to the Tuya cloud service after being powered on. The APP scans the QR code on the device (must be the QR code rule supported by the Tuya cloud service, and supports specific firmware access methods. Consult Tuya Technology-related business and project managers ) Enable the device to activate the binding of Tuya Cloud
 
@@ -46,13 +46,13 @@ This type of device is connected to the Tuya cloud service after being powered o
 | GPRS Device    | Smart devices that use GPRS communication technology to access the network and connect to cloud services |
 | NB-IOT Device  | Smart device adopting NarrowBand-Internet of Things technology |
 
-### 5. Automatic network discovery
+### Automatic network discovery
 
 Integrated with graffiti intelligent universal Configuration network technology to provide users with a set of fast Configuration network functions
 
-## Integrate Biz Bundle
+## Integrate
 
-### 1. Preparation for Integration
+### Preparation for Integration
 
 The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/en/) version 3.17.0, so before integration, you need to do some preparations:
 
@@ -60,7 +60,7 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 
 - Implement the Tuya Smart SDK [User registration](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/en/resource/User.html) and [Family Management](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/en/resource/HomeManager.html) 
 
-### 2. Integrate Biz Bundle
+### Integrate Biz Bundle
 
 - Create Project
 
@@ -207,7 +207,7 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
   
 ## Function call
 
-### 1. Function configuration
+### Function configuration
 
 | Configuration item  | Field name              |  Description        |
 | ----------- | -----------------  | ----------------- |
@@ -217,7 +217,7 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 | Theme color configuration  | <color name="primary_button_bg_color">#FF5A28</color> | Button background color |
 | Theme color configuration  | <color name="primary_button_font_color">#FFFFFF</color> | Button text color |
 
-### 2. Method call
+### Method call
 
 ```java
   TuyaDeviceActivatorManager.startDeviceActiveAction(activity, homeId, 
