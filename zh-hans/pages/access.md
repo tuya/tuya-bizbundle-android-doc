@@ -10,11 +10,7 @@
 
 ### res 配置
 
-**res/vaules/colors.xml** 为业务包所需颜色资源文件 [必选]
-
-**res/values/string.xml** 为业务包自定义配置和默认语言资源文件 [必选]
-
-**res/values**目录下其他文件夹为多语言资源文件，可根据情况选择配置 [可选]
+**res/values**多语言资源文件，可根据情况选择配置 [可选]
 
 ### 依赖源配置
 根目录的 build.gradle 文件
@@ -34,15 +30,4 @@ android {
     }
 }
 ```
-Application 初始化
-``` java 
-@Override
-public void onCreate() {
-    super.onCreate();
-    TuyaWrapper.init(this);
-    TuyaHomeSdk.init(this);
-    TuyaOptimusSdk.init(this);
-}
-```
-
 
