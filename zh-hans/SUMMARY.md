@@ -4,7 +4,7 @@
 * [业务包导航](./pages/biznav.md)
   * [H5 商城](./pages/mall/README.md)
   * [设备配网](./pages/activator/activator_device.md)
-  * [设备面板](./pages/panel/panel_device.md)
+  * [设备控制](./pages/panel/panel_device.md)
   * [摄像机业务包](./pages/ipc/camera_panel.md)
 * [FAQ](./pages/faq.md)
 * [更新日志](./pages/updates.md)
