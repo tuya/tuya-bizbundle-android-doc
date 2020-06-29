@@ -1,4 +1,4 @@
-# Tuya Smart Android Mall Biz Bundle
+# H5 Mall
 
 ## Features Overview
 

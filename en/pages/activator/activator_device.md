@@ -1,4 +1,4 @@
-# Tuya Smart Network Configuration Biz Bundle Access Guide
+# Device Configuration BizBundle
 
 ## Features
 
