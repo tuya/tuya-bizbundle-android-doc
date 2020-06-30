@@ -6,6 +6,7 @@
   * [设备配网](./pages/activator/activator_device.md)
   * [设备控制](./pages/panel/panel_device.md)
   * [摄像机业务包](./pages/ipc/camera_panel.md)
+  * [场景业务包](./pages/scene.md)
 * [FAQ](./pages/faq.md)
 * [更新日志](./pages/updates.md)
 
