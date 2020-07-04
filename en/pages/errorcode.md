@@ -1,4 +1,0 @@
-# ErrorCode
-
-| Error | Description                  |
-|:------|:----------------------|
