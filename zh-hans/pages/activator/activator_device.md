@@ -135,14 +135,14 @@
         implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
         implementation 'com.tuya.smart:tuyasmart-webcontainer:3.17.6r141-open-rc.1'
     
-        implementation 'com.tuya.smart:tuya-config-mesh:1.0.3'
+        implementation 'com.tuya.smart:tuya-config-mesh:1.0.4'
         implementation 'com.tuya.smart:tuya-config-mesh-api:1.0.1'
 	    
         implementation 'com.tuya.smart:tuya-config-ble:1.0.1'
         implementation 'com.tuya.smart:tuya-config-ble-api:1.0.1'
 	    
-        implementation 'com.tuya.smart:tuya-config-api:1.0.1'
-        implementation 'com.tuya.smart:tuya-config:1.0.2'
+        implementation 'com.tuya.smart:tuya-config-api:1.0.3'
+        implementation 'com.tuya.smart:tuya-config:1.0.6'
 	    
 	    implementation 'com.tuya.smart:tuya-scan:1.0.1'
     }
@@ -170,7 +170,9 @@
     <uses-permission
         android:name="android.permission.ACCESS_FINE_LOCATION"
         android:required="false" />
-	
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
   ```
 
 5. 混淆配置
