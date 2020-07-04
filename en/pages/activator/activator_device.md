@@ -228,6 +228,21 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
             public void onDevicesAdd(List<String> devIds, boolean updateRoomData) {
                 
             }
+            
+            @Override
+            public void onRoomDataUpdate() {
+                
+            }
+
+            @Override
+            public void onOpenDevicePanel(String s) {
+                
+            }
+
+            @Override
+            public void onExitConfigBiz() {
+                
+            }
     	});
 ```
 
@@ -244,3 +259,5 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 | ------------ | -------------------------- |
 | devIds          | List of device IDs with successful network configuration |
 | updateRoomData          | Whether the room equipment information has been changed |
+| onOpenDevicePanel          | You can open a touch panel and choose to implement according to actual business needs |
+| onExitConfigBiz          | If the configuration network is not executed, the configuration network service will be voluntarily withdrawn and selected to be implemented according to the actual business needs |

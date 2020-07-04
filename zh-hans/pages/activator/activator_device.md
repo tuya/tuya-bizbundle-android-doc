@@ -219,6 +219,21 @@
             public void onDevicesAdd(List<String> devIds, boolean updateRoomData) {
                 
             }
+            
+            @Override
+            public void onRoomDataUpdate() {
+                
+            }
+
+            @Override
+            public void onOpenDevicePanel(String s) {
+                
+            }
+
+            @Override
+            public void onExitConfigBiz() {
+                
+            }
     	});
 ```
 
@@ -235,3 +250,5 @@
 | ------------ | -------------------------- |
 | devIds          | 配网成功的设备 id 列表 |
 | updateRoomData          | 房间设备信息是否有变更 |
+| onOpenDevicePanel          | 可以打开摸个面板，根据实际业务需要选择实现 |
+| onExitConfigBiz          | 未执行配网，主动退出配网业务，根据实际业务需要选择实现 |
