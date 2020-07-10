@@ -118,6 +118,7 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
         //kotlin
         implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 	    
+	    //Three party open source components
 	    implementation 'com.alibaba:fastjson:1.1.67.android'
 	    implementation 'com.facebook.fresco:fresco:1.3.0'
 	    implementation 'com.google.zxing:core:3.2.1'
@@ -126,14 +127,20 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 	    implementation 'com.airbnb.android:lottie:2.7.0'
 	    implementation 'com.google.android:flexbox:0.2.5'
 	    
+	    //homeSDK
 	    implementation 'com.tuya.smart:tuyasmart:3.17.0-beta1'
 	    
+	    //home business api
 	    implementation 'com.tuya.smart:tuya-commonbiz-api:1.0.0-SNAPSHOT'
+	    
+	    //Scan code tool
 	    implementation 'com.tuya.smart:tuyasmart-qrcode:3.12.0r123-rc.2'
 	    
+	    //Framework components
         implementation 'com.tuya.smart:tuyasmart-framework:3.17.0.2r139-external'
         implementation "com.tuya.android.module:tymodule-annotation:0.0.8"
 	    
+	    //Basic UI components
         implementation 'com.tuya.smart:tuyasmart-uispecs:0.0.7'
         implementation 'com.tuya.smart:tuyasmart-base:3.17.0r139-rc.3'
         implementation 'com.tuya.smart:tuyasmart-stencilwrapper:3.17.0.3r139'
@@ -141,16 +148,16 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
         implementation 'com.tuya.android:dimencompat:1.0.1'
         implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
         implementation 'com.tuya.smart:tuyasmart-webcontainer:3.17.6r141-open-rc.1'
-    
+        
+        //configuration business components
         implementation 'com.tuya.smart:tuya-config-mesh:1.0.4'
         implementation 'com.tuya.smart:tuya-config-mesh-api:1.0.1'
-	    
         implementation 'com.tuya.smart:tuya-config-ble:1.0.1'
         implementation 'com.tuya.smart:tuya-config-ble-api:1.0.1'
-	    
         implementation 'com.tuya.smart:tuya-config-api:1.0.3'
         implementation 'com.tuya.smart:tuya-config:1.0.6'
 	    
+	    //Scan code business components
 	    implementation 'com.tuya.smart:tuya-scan:1.0.1'
     }
 	
