@@ -7,4 +7,5 @@ Tuya Android BizBundle is a vertical business bundle that contains logic modules
 Tuya Android BizBundle currently offered includes:
 - H5 Mall
 - Device Configuration
-- IPC bizBundle
+- IPC BizBundle
+- Scene BizBundle
