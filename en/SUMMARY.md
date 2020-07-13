@@ -5,7 +5,8 @@
   * [H5 Mall](./pages/mall/README.md)
   * [Device Configuration](./pages/activator/activator_device.md)
   * [Device Control](./pages/panel/panel_device.md)
-  * [IPC Device bizBundle](./pages/ipc/camera_panel.md)
+  * [IPC Device BizBundle](./pages/ipc/camera_panel.md)
+  * [Scene BizBundle](./pages/scene.md)
 * [FAQ](./pages/faq.md)
 * [Changelog](./pages/updates.md)
 
