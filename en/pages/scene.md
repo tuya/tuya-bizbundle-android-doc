@@ -1,23 +1,23 @@
-# 场景业务包
+# Scene Biz Bundle
 
-## 功能介绍
+## Features
 
-业务功能包括涂鸦智能场景模块的「添加智能」和「编辑智能」的业务逻辑和UI界面。
+The business functions include the business logic and UI interface of "add scene" and "edit scene" of the Tuya smart scene module.
 
-智能场景分为「一键执行场景」和「自动化场景」，下文分别简称为「场景」和「自动化」。
+Intelligent scenes are divided into "one-key execution scenes" and "automated scenes", hereinafter referred to as "scene" and "automation", respectively.
 
-场景是用户添加动作，手动触发；自动化是由用户设定条件，当条件触发后自动执行设定的动作。
+The scenario is that the user adds an action and triggers it manually; the automation is a condition set by the user, and when the condition is triggered, the set action is automatically executed.
 
-涂鸦云支持用户根据实际生活场景，通过设置气象或设备条件，当条件满足时，让一个或多个设备执行相应的任务。
+Tuya Cloud supports users to set weather or equipment conditions based on actual life scenarios. When the conditions are met, let one or more equipment perform the corresponding tasks.
 
 
-## 业务包集成
+## Biz Bundle integration
 
-### 创建工程
+### Create project
 
-   在 Android Studio 中建立你的工程,接入公版 SDK 并配置完成
+   Create your project in Android Studio, connect to the public SDK and configure it
 
-### 根目录的 build.gradle 配置
+### The build.gradle configuration of the root directory
 
   ``` groovy
   allprojects {
@@ -28,7 +28,7 @@
   }
   ```
 
-### module 的 build.gradle 配置
+### module's build.gradle configuration
 
   ``` groovy
   android {
@@ -95,38 +95,38 @@
     }
   ```
 
-## 服务协议
+## Service Agreement
 
-### 提供服务
+### Provide services
 
-场景业务包实现 `ITuyaSceneBusinessService`以提供服务。
+The scene biz bundle implements `ITuyaSceneBusinessService` to provide services.
 
-**示例代码**
+**Example**
 
 ``` java
-  //获取场景业务包服务
+ //Get scene bizbundle service
 ITuyaSceneBusinessService iTuyaSceneBusinessService = MicroContext.findServiceByInterface(ITuyaSceneBusinessService.class.getName());
 ```
-### 创建场景
+### Create Scene
 
-通过获取家庭 Id 进入场景添加页 
+Enter the scene adding page by getting the family ID
 
-**接口说明**
+**Declaration**
 
-进入创建场景页
+Go to create scene page
 
 ``` java
 ITuyaSceneBusinessService.addScene(Activity activity, long homeId, int requestCode);;
 ```
-**参数说明**
+**Parameters**
 
-| 参数         | 说明                                                         |
+| Parameter         | Description                                                         |
 | ------------ | ------------------------------------------------------------ |
-| activity     | Activity 对象 |
-| homeId       | 家庭 Id 通过公版 SDK 接口获取                                                             |
-| requestCode | 请求 code，在 onActivityResult 的时候带回                                        |
+| activity     | Activity Object |
+| homeId       | The family ID is obtained through the home SDK interface                                                            |
+| requestCode | Request code, bring back in onActivityResult                                     |
 
-**示例代码**
+**Example**
 
 ``` java
 if(null != iTuyaSceneBusinessService && HOME_ID != 0){
@@ -134,28 +134,28 @@ if(null != iTuyaSceneBusinessService && HOME_ID != 0){
         }      
 ```
 
-### 编辑场景
-通过获取场景数据和家庭 Id进入场景编辑页面
+### Edit Scene
+Enter scene edit page by obtaining scene data and family ID
 
-**接口说明**
+**Declaration**
 
-进入编辑场景页
+Enter edit scene
 
 ``` java
 ITuyaSceneBusinessService.editScene(Activity activity, long homeId,SceneBean sceneBean, int requestCode);;
 ```
 
-**参数说明**
+**Parameters**
 
-| 参数         | 说明                                                         |
+| Parameter         | Description                                                         |
 | ------------ | ------------------------------------------------------------ |
-| activity     | Activity 对象 |
-| homeId       | 家庭 Id 通过公版 SDK 接口获取    
-| SceneBean       | 场景数据对象，通过 SDK 获取场景列表接口获取                                                              |
-| requestCode | 请求 code，在 onActivityResult 的时候带回                                        |
+| activity     | Activity Object |
+| homeId       | The family ID is obtained through the home SDK interface 
+| SceneBean       | Scene data object, obtained through SDK Get Scene List interface                                                             |
+| requestCode | Request code, bring back in onActivityResult                                        |
 
 
-**示例代码**
+**Example**
 
 ``` java
 TuyaHomeSdk.getSceneManagerInstance().getSceneList(homeId, new ITuyaResultCallback<List<SceneBean>>() {
@@ -177,26 +177,27 @@ TuyaHomeSdk.getSceneManagerInstance().getSceneList(homeId, new ITuyaResultCallba
     
 ```
 
-### 设置地理位置
-场景的条件和生效时间段需要设置app的地理位置，如果不设置，将不会在选择条件时自动获取城市信息，但是还是可以在城市列表自行选择
+### Set geographic location
 
-**接口说明**
+The conditions of the scene and the effective time period need to set the geographic location of the app. If it is not set, the city information will not be automatically obtained when the condition is selected, but it can still be selected on the city list.
 
-设置场景条件地理位置
+**Declaration**
+
+Set scene conditions‘s location
 
 ``` java
 ITuyaSceneBusinessService.setAppLocatione(double longitude, double latitude);
 ```
 
-**参数说明**
+**Parameters**
 
-| 参数         | 说明                                                         |
+| Parameter         | Description                                                          |
 | ------------ | ------------------------------------------------------------ |
-| longitude     | 经度 业务app自行接入的相关三方地图提供|
-| latitude       | 纬度 业务app自行接入的相关三方地图提供
+| longitude     | Longitude,Long-distance business app provides access to related tripartite maps|
+| latitude       | Latitude,Provide relevant three-party maps for self-service access
 
 
-**示例代码**
+**Example**
 
 ``` java
 
@@ -205,54 +206,56 @@ if(null != iTuyaSceneBusinessService){
 }    
 ```
 
-### 设置App地图类
-场景条件中的地理位置，如果不需要国外账号就无需调用，在国外账号需要设置地图类，不设置默认走获取国内城市接口
+### Set App Map Class
 
-**接口说明**
+The geographical location in the scene conditions, if you do not need a foreign account, you do not need to call, you need to set the map category in the foreign account, do not set the default to get the domestic city interface
 
-设置地图类对象
+**Declaration**
+
+Set App Map Class
 
 ``` java
 ITuyaSceneBusinessService.setMapActivity(Class activity);
 ```
 
-**参数说明**
+**Parameters**
 
-| 参数         | 说明                                                         |
+| Parameter         | Description                                                           |
 | ------------ | ------------------------------------------------------------ |
-| Class     | 地图Activity 类对象 |
+| Class     |Map Activity class object |
 
 
 
-**示例代码**
+**Example**
 
 ``` java
 if(null != iTuyaSceneBusinessService){
-            //TODO 业务方地图Activity
+          
             iTuyaSceneBusinessService.setMapActivity(MapActivity.class);
         }    
 ```
-### 保存地图选点数据
-接入地图类之后，需要将地图选点数据发给业务包，用以更新条件地理位置信息
+### Save map selection data
 
-**接口说明**
+After accessing the map class, you need to send the map selection data to the service package to update the conditional geographic location information
 
-设置地图选点经纬度信息
+**Declaration**
+
+Set up map data
 
 ``` java
 ITuyaSceneBusinessService.saveMapData(double longitude, double latitude,String city, String address);
 ```
 
-**参数说明**
+**Parameters**
 
-| 参数         | 说明                                                         |
+| Parameter         | Description                                                          |
 | ------------ | ------------------------------------------------------------ |
-| longitude     | 经度 |
-| latitude       | 纬度    
-| city       | 城市信息|
-| address | 地址信息                                        |
+| longitude     | longitude |
+| latitude       | latitude    
+| city       | city |
+| address | address                                      |
 
-**示例代码**
+**Example**
 
 ``` java
 if(null != iTuyaSceneBusinessService){    
