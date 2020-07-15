@@ -55,7 +55,7 @@ Tuya Smart Android Device Control BizBundle is the core container of Tuya Smart 
 	dependencies {
            implementation fileTree(dir: 'libs', include: ['*.jar'])
       //panel
-      implementation 'com.tuya.smart:panel-sdk:0.5.0'
+      implementation 'com.tuya.smart:panel-sdk:0.5.1'
       //homesdk
       implementation 'com.alibaba:fastjson:1.1.67.android'
       implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
@@ -184,6 +184,11 @@ Tuya Smart Android Device Control BizBundle is the core container of Tuya Smart 
       @Override
       public void onCreate() {
           super.onCreate();
+
+          TuyaHomeSdk.setDebugMode(BuildConfig.DEBUG);
+          // you must remove TuyaHomeSdk.init(),then add TuyaPanelSDK.init()
+          TuyaPanelSDK.init(this," TUYA_SMART_APPKEY","TUYA_SMART_SECRET");
+
           // fail router listener
           TuyaWrapper.init(this, new RouteEventListener() {
             @Override
@@ -191,14 +196,45 @@ Tuya Smart Android Device Control BizBundle is the core container of Tuya Smart 
                 ToastUtil.shortToast(TuyaPanelSDK.getCurrentActivity(), urlBuilder.originUrl);
             }
           });
-          TuyaHomeSdk.setDebugMode(BuildConfig.DEBUG);
-          // you must remove TuyaHomeSdk.init(),then add TuyaPanelSDK.init()
-          TuyaPanelSDK.init(this," TUYA_SMART_APPKEY","TUYA_SMART_SECRET");
+          //register FamilyService,set the current family homeId,BizBundleFamilyServiceImpl is sample code
+          TuyaWrapper.registerService(AbsBizBundleFamilyService.class, new BizBundleFamilyServiceImpl());
       }
   }
   ```
 
 ## Function Call
+
+### Implementation FamilyService
+
+you must extends AbsBizBundleFamilyService class，set the current family homeId
+
+**sample code**
+``` java
+public class BizBundleFamilyServiceImpl extends AbsBizBundleFamilyService {
+
+    private long mHomeId;
+
+    @Override
+    public long getCurrentHomeId() {
+        return mHomeId;
+    }
+
+    @Override
+    public void setCurrentHomeId(long homeId) {
+        mHomeId = homeId;
+    }
+}
+```
+### Set Family HomeId
+
+After fetching the family list, set the current family homeId with a service call
+
+**示例代码**
+``` java
+    AbsBizBundleFamilyService service = MicroServiceManager.getInstance().findServiceByInterface(AbsBizBundleFamilyService.class.getName());
+    //set the current family homeId
+    service.setCurrentHomeId(homeBean.getHomeId());
+```
 
 ### Open panel
 

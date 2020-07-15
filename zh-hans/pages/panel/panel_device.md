@@ -55,7 +55,7 @@
 	dependencies {
       implementation fileTree(dir: 'libs', include: ['*.jar'])
       //panel
-      implementation 'com.tuya.smart:panel-sdk:0.5.0'
+      implementation 'com.tuya.smart:panel-sdk:0.5.1'
       //homesdk
       implementation 'com.alibaba:fastjson:1.1.67.android'
       implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
@@ -182,6 +182,9 @@
       @Override
       public void onCreate() {
           super.onCreate();
+          // 必须移除 TuyaHomeSdk.init() 方法，再使用 TuyaPanelSDK.init()
+          TuyaHomeSdk.setDebugMode(BuildConfig.DEBUG);
+          TuyaPanelSDK.init(this," TUYA_SMART_APPKEY","TUYA_SMART_SECRET");
           //未实现的路由回调
           TuyaWrapper.init(this, new RouteEventListener() {
             @Override
@@ -189,13 +192,45 @@
                 ToastUtil.shortToast(TuyaPanelSDK.getCurrentActivity(), urlBuilder.originUrl);
             }
           });
-          TuyaHomeSdk.setDebugMode(BuildConfig.DEBUG);
-          // 必须移除 TuyaHomeSdk.init() 方法，再使用 TuyaPanelSDK.init()
-          TuyaPanelSDK.init(this," TUYA_SMART_APPKEY","TUYA_SMART_SECRET");
+          //注册家庭服务，实现设置当前家庭 homeId，BizBundleFamilyServiceImpl为示例代码，用户可以自行实现
+          TuyaWrapper.registerService(AbsBizBundleFamilyService.class, new BizBundleFamilyServiceImpl());
       }
   }
   ```
 ## 功能调用
+
+### 实现家庭服务
+
+通过继承 AbsBizBundleFamilyService 抽象类，实现设置当前家庭 homeId
+
+**示例代码**
+``` java
+public class BizBundleFamilyServiceImpl extends AbsBizBundleFamilyService {
+
+    private long mHomeId;
+
+    @Override
+    public long getCurrentHomeId() {
+        return mHomeId;
+    }
+
+    @Override
+    public void setCurrentHomeId(long homeId) {
+        mHomeId = homeId;
+    }
+}
+```
+
+### 设置家庭 HomeId
+
+当获取家庭列表后，通过服务化调用设置家庭 homeId
+
+**示例代码**
+``` java
+    AbsBizBundleFamilyService service = MicroServiceManager.getInstance().findServiceByInterface(AbsBizBundleFamilyService.class.getName());
+    //设置为当前家庭的homeId
+    service.setCurrentHomeId(homeBean.getHomeId());
+```
 
 ### 打开面板
 
