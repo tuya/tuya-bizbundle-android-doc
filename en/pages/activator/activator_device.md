@@ -126,6 +126,7 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 	    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
 	    implementation 'com.airbnb.android:lottie:2.7.0'
 	    implementation 'com.google.android:flexbox:0.2.5'
+	    implementation "com.facebook.fresco:imagepipeline-okhttp3:1.3.0"
 	    
 	    //homeSDK
 	    implementation 'com.tuya.smart:tuyasmart:3.17.0-beta1'
@@ -147,7 +148,9 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
         implementation 'com.tuya.smart:tuyasmart-uiadapter:3.13.3r129-rc.4'
         implementation 'com.tuya.android:dimencompat:1.0.1'
         implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
-        implementation 'com.tuya.smart:tuyasmart-webcontainer:3.17.6r141-open-rc.1'
+        implementation 'com.tuya.smart:tuyasmart-webcontainer:3.17.6r141-open-rc.2'
+        implementation 'com.tuya.smart:tuyasmart-xplatformmanager:1.0.0'
+        implementation 'com.tuya.smart:tuyasmart-appshell:3.10.0'
         
         //configuration business components
         implementation 'com.tuya.smart:tuya-config-mesh:1.0.4'
@@ -155,7 +158,7 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
         implementation 'com.tuya.smart:tuya-config-ble:1.0.1'
         implementation 'com.tuya.smart:tuya-config-ble-api:1.0.1'
         implementation 'com.tuya.smart:tuya-config-api:1.0.3'
-        implementation 'com.tuya.smart:tuya-config:1.0.6'
+        implementation 'com.tuya.smart:tuya-config:1.0.7'
 	    
 	    //Scan code business components
 	    implementation 'com.tuya.smart:tuya-scan:1.0.1'
@@ -208,6 +211,10 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 	
 	#fresco
 	-keep class com.facebook.drawee.backends.pipeline.Fresco
+	-keep @com.facebook.common.internal.DoNotStrip class *
+    -keepclassmembers class * {
+    @com.facebook.common.internal.DoNotStrip *;
+    }
 	
 	#tuya
 	-keep class com.tuya.**{*;}
