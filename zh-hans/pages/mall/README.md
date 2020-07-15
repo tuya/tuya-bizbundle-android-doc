@@ -36,8 +36,8 @@ H5 商城业务包提供了承载 「App 商城」的 Android 容器，让您的
   ``` groovy
 	dependencies {
     //require start
-    implementation 'com.tuya.smart:tuyasmart:3.15.0-beta3'
-    implementation 'com.tuya.smart:tuyasmart-webcontainer:3.17.6r141-open'
+    implementation 'com.tuya.smart:tuyasmart:3.17.0'
+    implementation 'com.tuya.smart:tuyasmart-webcontainer:3.17.6r141-open-rc.2'
     implementation 'com.tuya.smart:tuyasmart-tuyamall-sdk:1.0.2'
     implementation 'com.tuya.smart:optimus:1.0.0'
     annotationProcessor 'com.tuya.smart:optimus-compiler:1.0.0'
