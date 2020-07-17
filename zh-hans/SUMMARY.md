@@ -7,6 +7,8 @@
   * [设备控制](./pages/panel/panel_device.md)
   * [摄像机业务包](./pages/ipc/camera_panel.md)
   * [场景业务包](./pages/scene.md)
+  * [常见问题与反馈](./pages/faq/faq.md)
+  * [消息中心](./pages/message/messagecenter.md)
 * [FAQ](./pages/faq.md)
 * [更新日志](./pages/updates.md)
 

@@ -7,6 +7,8 @@
   * [Device Control](./pages/panel/panel_device.md)
   * [IPC Device BizBundle](./pages/ipc/camera_panel.md)
   * [Scene BizBundle](./pages/scene.md)
+  * [FAQ BizBundle](./pages/faq/faq.md)
+  * [Message Center BizBundle](./pages/message/messagecenter.md)
 * [FAQ](./pages/faq.md)
 * [Changelog](./pages/updates.md)
 
