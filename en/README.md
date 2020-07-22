@@ -10,3 +10,5 @@ Tuya Android BizBundle currently offered includes:
 - Deivce Control
 - IPC BizBundle
 - Scene BizBundle
+- FAQ BizBundle
+- Message Center BizBundle
