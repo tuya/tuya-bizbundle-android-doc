@@ -74,7 +74,7 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 	
 	     repositories {
 	         maven {
-	             url 'https://maven-other.tuya.com/repository/maven-releases/'
+	             url 'https://maven-other.tuya.com/repository/maven-public/'
 	         }
              google()
              jcenter()
@@ -89,7 +89,7 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 	 allprojects {
 	     repositories {
 	         maven {
-	             url 'https://maven-other.tuya.com/repository/maven-releases/'
+	             url 'https://maven-other.tuya.com/repository/maven-public/'
 	         }
              google()
              jcenter()

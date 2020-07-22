@@ -70,7 +70,7 @@
 	
 	     repositories {
 	         maven {
-	             url 'https://maven-other.tuya.com/repository/maven-releases/'
+	             url 'https://maven-other.tuya.com/repository/maven-public/'
 	         }
              google()
              jcenter()
@@ -84,7 +84,7 @@
 	 allprojects {
 	     repositories {
 	         maven {
-	             url 'https://maven-other.tuya.com/repository/maven-releases/'
+	             url 'https://maven-other.tuya.com/repository/maven-public/'
 	         }
              google()
              jcenter()
