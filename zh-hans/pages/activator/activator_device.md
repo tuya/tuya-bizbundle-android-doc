@@ -221,11 +221,11 @@
 
 | 配置项  | 字段名              |  描述        |
 | ----------- | -----------------  | ----------------- |
-| AP 热点名称配置    | <string name="ap_mode_ssid">SmartLife</string> | AP 配网支持的热点前缀列表，默认配置：SmartLife|
-| 是否支持 BLE  | <bool name="is_need_ble_support">true</bool>| 是否支持 BLE 设备配网功能，默认配置：true|
-| 是否支持 MESH  | <bool name="is_need_blemesh_support">true</bool>| 是否支持 MESH 设备配网功能，默认配置：true|
-| 主题色配置  | <color name="primary_button_bg_color">#FF5A28</color>| 按钮背景配色|
-| 主题色配置  | <color name="primary_button_font_color">#FFFFFF</color>| 按钮的文字配色|
+| AP 热点名称配置  | ```<string name="ap_mode_ssid">SmartLife</string>``` | AP 配网支持的热点前缀列表，默认配置：SmartLife|
+| 是否支持 BLE  | ```<bool name="is_need_ble_support">true</bool>``` | 是否支持 BLE 设备配网功能，默认配置：true|
+| 是否支持 MESH  | ```<bool name="is_need_blemesh_support">true</bool>``` | 是否支持 MESH 设备配网功能，默认配置：true|
+| 主题色配置  | ```<color name="primary_button_bg_color">#FF5A28</color>``` | 按钮背景配色|
+| 主题色配置  | ```<color name="primary_button_font_color">#FFFFFF</color>``` | 按钮的文字配色|
 
 ### 方法调用
 
