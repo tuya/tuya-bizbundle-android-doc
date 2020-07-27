@@ -74,7 +74,7 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 	
 	     repositories {
 	         maven {
-	             url 'https://maven-other.tuya.com/repository/maven-releases/'
+	             url 'https://maven-other.tuya.com/repository/maven-public/'
 	         }
              google()
              jcenter()
@@ -89,7 +89,7 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 	 allprojects {
 	     repositories {
 	         maven {
-	             url 'https://maven-other.tuya.com/repository/maven-releases/'
+	             url 'https://maven-other.tuya.com/repository/maven-public/'
 	         }
              google()
              jcenter()
@@ -227,11 +227,11 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 
 | Configuration item  | Field name              |  Description        |
 | ----------- | -----------------  | ----------------- |
-| AP hotspot name configuration  | <string name="ap_mode_ssid">SmartLife</string> | List of hotspot prefixes supported by AP configuration, default configuration: SmartLife |
-| Support BLE  | <bool name="is_need_ble_support">true</bool> | Whether to support the network function of BLE devices, the default configuration: true |
-| Support MESH  | <bool name="is_need_blemesh_support">true</bool> | Whether to support the network function of MESH devices, the default configuration: true |
-| Theme color configuration  | <color name="primary_button_bg_color">#FF5A28</color> | Button background color |
-| Theme color configuration  | <color name="primary_button_font_color">#FFFFFF</color> | Button text color |
+| AP hotspot name configuration  | ```<string name="ap_mode_ssid">SmartLife</string>``` | List of hotspot prefixes supported by AP configuration, default configuration: SmartLife |
+| Support BLE  | ```<bool name="is_need_ble_support">true</bool>``` | Whether to support the network function of BLE devices, the default configuration: true |
+| Support MESH  | ```<bool name="is_need_blemesh_support">true</bool>``` | Whether to support the network function of MESH devices, the default configuration: true |
+| Theme color configuration  | ```<color name="primary_button_bg_color">#FF5A28</color>``` | Button background color |
+| Theme color configuration  | ```<color name="primary_button_font_color">#FFFFFF</color>``` | Button text color |
 
 ### Method call
 
