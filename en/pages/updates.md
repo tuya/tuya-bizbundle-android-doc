@@ -9,3 +9,4 @@
 | 0.5.3   |      2020.7.17     | fix some bugs|
 | 0.5.4   |      2020.7.20    | fix some bugs|
 | 0.5.5   |      2020.7.27    | fix some bugs|
+| 0.5.6   |      2020.7.28    | fix panel group bug|
