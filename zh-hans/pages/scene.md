@@ -82,7 +82,7 @@
 	    implementation 'com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.4.0'
 	    implementation 'com.facebook.react:react-native:0.51.1.11'
 	    implementation 'com.tuya.smart:tuyasmart-tuya-mist-litho-base:3.13.0r127-rc.7'
-	    implementation 'com.tuya.android:mist-litho:1.3.30'
+	    implementation 'com.tuya.android:mist-litho:1.3.31'
 	    implementation 'com.tuya.android:mist-litho-fresco:1.3.30'
 	    implementation 'com.tuya.android:mist-litho-sections-widget:1.3.30'
 	    implementation 'com.tuya.android:mist-litho-widget:1.3.30'
@@ -94,6 +94,16 @@
 	    //scene require end  	
     }
   ```
+
+### 在Application中相关初始化操作
+ ``` java
+ 
+   SoLoader.init(this, false);
+   MistConfig config = new MistConfig();
+   config.create();
+   MistCore.getInstance().init(config, this);
+ 
+ ``` 
 
 ## 服务协议
 
