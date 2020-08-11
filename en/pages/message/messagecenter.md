@@ -66,7 +66,7 @@ dependencies {
     implementation 'com.tuya.android.module:tymodule-annotation:0.0.8'
     implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
       
-    implementation 'com.tuya.smart:tuyasmart-message:3.17.6r141-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-message:3.17.6r141-rc.2'
     implementation 'com.tuya.smart:tuyasmart-message-api:3.17.6r141-rc.1'
 }
 ```

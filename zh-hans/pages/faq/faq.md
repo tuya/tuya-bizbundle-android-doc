@@ -62,7 +62,7 @@ dependencies {
 
 
     implementation 'com.tuya.smart:tuyasmart-feedback-api:3.17.6r141-rc.1'
-    implementation 'com.tuya.smart:tuyasmart-feedback:3.17.6r141-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-feedback:3.17.6r141-rc.2'
     implementation 'com.tuya.smart:tuyasmart-rpc:3.12.0r123'
 
     implementation "com.tuya.android:net-diagnosis:2.6.0-rc.1"
