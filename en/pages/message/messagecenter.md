@@ -66,6 +66,9 @@ dependencies {
     implementation 'com.tuya.android.module:tymodule-annotation:0.0.8'
     implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
       
+    implementation 'com.tuya.smart:tuyasmart-panel:3.17.6r141-open'
+    implementation 'com.facebook.react:react-native:0.51.1.11'
+    
     implementation 'com.tuya.smart:tuyasmart-message:3.17.6r141-rc.2'
     implementation 'com.tuya.smart:tuyasmart-message-api:3.17.6r141-rc.1'
 }
@@ -109,7 +112,7 @@ public class TuyaApplication extends Application {
 
             }
         });
-        Fresco.initialize(this);
+        FrescoManager.initFresco(this);
     }
 }
 ```
@@ -121,6 +124,8 @@ public class TuyaApplication extends Application {
 1.Make sure that the user is logged in before using any interface
 
 2.When the login user changes, be sure to re-judge the Message Center availability status and re-acquire the Message Center page
+
+3.To display the encrypted picture, FrescoManager.initFresco(this) must be called, and the initialization cannot be repeated, otherwise the picture cannot be decrypted
 
 ## Go To Message Center Page
 
