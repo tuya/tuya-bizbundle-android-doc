@@ -65,6 +65,9 @@ dependencies {
     implementation 'com.tuya.smart:tuya-commonbiz-api:1.0.0-SNAPSHOT'
     implementation 'com.tuya.android.module:tymodule-annotation:0.0.8'
     implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
+    
+    implementation 'com.tuya.smart:tuyasmart-panel:3.17.6r141-open'
+    implementation 'com.facebook.react:react-native:0.51.1.11'
       
     implementation 'com.tuya.smart:tuyasmart-message:3.17.6r141-rc.2'
     implementation 'com.tuya.smart:tuyasmart-message-api:3.17.6r141-rc.1'
@@ -110,7 +113,7 @@ public class TuyaApplication extends Application {
 
             }
         });
-        Fresco.initialize(this);
+        FrescoManager.initFresco(this);
     }
 }
 ```
@@ -121,9 +124,9 @@ public class TuyaApplication extends Application {
 
 1.在调用任何接口之前，务必确认用户已登录；
 
-2.登录用户发生状态变化时，务必重新判断消息中心可用状态并重新获取消息中心页面。
+2.登录用户发生状态变化时，务必重新判断消息中心可用状态并重新获取消息中心页面；
 
-
+3、显示加密图片，需调用FrescoManager.initFresco(this) ,不能重复初始化，否则无法进行图片解密。
 
 ## 进入消息中心
 
