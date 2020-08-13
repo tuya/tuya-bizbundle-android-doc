@@ -45,7 +45,6 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation "android.arch.lifecycle:extensions:1.1.1"
 
-    implementation "com.tuya.smart:tuyasmart-demo-login:3.17.6r141"
     implementation "com.tuya.smart:tuyasmart-base:3.17.0r139-rc.3"
     implementation 'com.tuya.smart:tuyasmart:3.17.6-beta2'
     implementation "com.tuya.smart:tuyasmart-framework:3.17.0.3r139-external"
@@ -66,9 +65,11 @@ dependencies {
     implementation 'com.tuya.smart:tuya-commonbiz-api:1.0.0-SNAPSHOT'
     implementation 'com.tuya.android.module:tymodule-annotation:0.0.8'
     implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
-    implementation "com.tuya.smart:tuyasmart-demo-login:3.17.6r141"
       
-    implementation 'com.tuya.smart:tuyasmart-message:3.17.6r141-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-panel:3.17.6r141-open'
+    implementation 'com.facebook.react:react-native:0.51.1.11'
+    
+    implementation 'com.tuya.smart:tuyasmart-message:3.17.6r141-rc.2'
     implementation 'com.tuya.smart:tuyasmart-message-api:3.17.6r141-rc.1'
 }
 ```
@@ -80,6 +81,7 @@ dependencies {
         <item name="app_bg_color">@color/app_bg_color</item>
         <item name="list_primary_color">@color/list_primary_color</item>
         <item name="list_sub_color">@color/list_sub_color</item>
+        <item name="list_line_color">@color/list_line_color</item>
     </style>
 ```
 
@@ -93,6 +95,7 @@ dependencies {
     <color name="list_sub_color">#626262</color>
     <color name="color_CC4600">#cc4600</color>
     <color name="color_bdbdbd">#bdbdbd</color>
+    <color name="list_line_color">#DBDBDB</color>
 ```
 
 ### Init Message Center Biz Bundle in the Application
@@ -109,7 +112,7 @@ public class TuyaApplication extends Application {
 
             }
         });
-        Fresco.initialize(this);
+        FrescoManager.initFresco(this);
     }
 }
 ```
@@ -121,6 +124,8 @@ public class TuyaApplication extends Application {
 1.Make sure that the user is logged in before using any interface
 
 2.When the login user changes, be sure to re-judge the Message Center availability status and re-acquire the Message Center page
+
+3.To display the encrypted picture, FrescoManager.initFresco(this) must be called, and the initialization cannot be repeated, otherwise the picture cannot be decrypted
 
 ## Go To Message Center Page
 
