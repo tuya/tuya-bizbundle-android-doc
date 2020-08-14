@@ -42,7 +42,6 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
 
-    implementation "com.tuya.smart:tuyasmart-demo-login:3.17.6r141"
     implementation 'com.tuya.smart:tuyasmart:3.17.6-beta2'
     implementation "com.tuya.smart:tuyasmart-framework:3.17.0.3r139-external"
     implementation 'com.tuya.smart:tuyasmart-stencilwrapper:3.17.0.2r139'
@@ -63,7 +62,7 @@ dependencies {
 
 
     implementation 'com.tuya.smart:tuyasmart-feedback-api:3.17.6r141-rc.1'
-    implementation 'com.tuya.smart:tuyasmart-feedback:3.17.6r141-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-feedback:3.17.6r141-rc.2'
     implementation 'com.tuya.smart:tuyasmart-rpc:3.12.0r123'
 
     implementation "com.tuya.android:net-diagnosis:2.6.0-rc.1"
@@ -82,6 +81,7 @@ dependencies {
         <item name="app_bg_color">@color/app_bg_color</item>
         <item name="list_primary_color">@color/list_primary_color</item>
         <item name="list_sub_color">@color/list_sub_color</item>
+        <item name="list_line_color">@color/list_line_color</item>
     </style>
 ```
 
@@ -93,6 +93,7 @@ dependencies {
     <color name="list_sub_color">#626262</color>
     <color name="color_CC4600">#cc4600</color>
     <color name="color_bdbdbd">#bdbdbd</color>
+    <color name="list_line_color">#DBDBDB</color>
 ```
 
 ### Application中初始化常见问题与反馈业务包
