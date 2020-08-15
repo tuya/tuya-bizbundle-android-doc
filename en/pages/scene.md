@@ -89,7 +89,7 @@ Tuya Cloud supports users to set weather or equipment conditions based on actual
 	    implementation 'com.tuya.android:mist-litho-sections-core:1.3.30'
 	    implementation 'com.tuya.android:mist-litho-annotation:1.0.0'
 	    implementation 'com.tuya.android:mist-litho-core:1.3.30'
-	    implementation 'com.tuya.smart:tuyasmart-scene:3.17.6r141-rc.11'
+	    implementation 'com.tuya.smart:tuyasmart-scene:3.17.6r141-rc.15'
 	    implementation 'com.tuya.smart:tuyasmart-scene-business-api:3.17.6r141-rc.1'
 	    //scene require end  	
     }
