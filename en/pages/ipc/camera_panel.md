@@ -12,7 +12,7 @@ TuyaSmart Android IPC biz Bundle (referred to as: TuyaCameraPanelSDK ) is a seri
 
 ### Preparation
 
-TuyaCameraPanelSDK is based on TuyaHomeSdk 3.13.0 version
+TuyaCameraPanelSDK is based on TuyaHomeSdk 3.17.6 version
 
 Before integrating TuyaCameraPanelSDK, you need to do the following:
 
@@ -101,11 +101,21 @@ Before integrating TuyaCameraPanelSDK, you need to do the following:
       //***** start ****//
       implementation 'com.tuya.smart:tuyasmart-camera-panel-sdk:3.17.6-open.1'
       //RN
-      implementation 'com.tuya.smart:panel-sdk:0.5.0'
+      implementation 'com.tuya.smart:panel-sdk:0.5.6'
       //homesdk
-      implementation 'com.alibaba:fastjson:1.1.67.android'
-      implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
-      implementation 'com.tuya.smart:tuyasmart:3.17.0'
+      implementation 'com.tuya.smart:tuyasmart:3.17.6'
+       
+      implementation 'com.tuya.smart:tuyasmart-imagepipeline-okhttp3:0.0.1'
+      
+      implementation 'com.tuya.smart:tuyasmart-webcontainer:3.12.6r125-h1'
+      implementation 'com.tuya.smart:tuyasmart-appshell:3.10.0'
+      
+      implementation 'com.tuya.smart:tuyasmart-rpc:3.12.0r123'
+      
+      implementation 'com.tuya.smart:tuyasmart-video:3.12.6r125'
+   
+      implementation 'com.tuya.android.module:tymodule-annotation:0.0.7.2'
+      implementation 'com.tuya.smart:tuyasmart-wkvideoplayer:1.0.0'
       //*****  end ****//
    
       //third
@@ -115,7 +125,7 @@ Before integrating TuyaCameraPanelSDK, you need to do the following:
       implementation 'com.facebook.fresco:fresco:1.3.0'
       implementation 'com.facebook.fresco:animated-gif:1.3.0'
       implementation "com.facebook.fresco:imagepipeline-okhttp3:1.3.0"
-      implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
+      implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
       implementation 'javax.inject:javax.inject:1'
       implementation 'com.alibaba:fastjson:1.1.67.android'
       implementation 'com.facebook.react:react-native:0.51.1.11'
@@ -183,7 +193,19 @@ Before integrating TuyaCameraPanelSDK, you need to do the following:
       </application>
    ```
 
-5. Configure proguard-rules.pro
+5.  Configure theme
+
+      ```xml
+      <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+              <!-- default configuration start -->
+               <item name="app_bg_color">@color/app_bg_color</item>
+              <item name="list_line_color">@color/list_line_color</item>
+              <item name="status_bg_color">@color/status_bg_color</item>
+              <!-- default configuration end -->
+          </style>
+      ```
+   
+6. Configure proguard-rules.pro
 
    Configure in the proguard-rules.pro file
 
