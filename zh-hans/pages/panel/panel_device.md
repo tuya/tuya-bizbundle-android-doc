@@ -55,7 +55,7 @@
 	dependencies {
       implementation fileTree(dir: 'libs', include: ['*.jar'])
       //panel
-      implementation 'com.tuya.smart:panel-sdk:0.5.7'
+      implementation 'com.tuya.smart:panel-sdk:0.6.0'
       //homesdk
       implementation 'com.alibaba:fastjson:1.1.67.android'
       implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
@@ -298,12 +298,12 @@ void setPressedRightMenuListener(ITuyaPressedRightMenuListener listener);
 
 | 参数                          | 说明                            |
 | ----------------------------- | ------------------------------- |
-| ITuyaPressedRightMenuListener | 点击按钮回调获取当前面板设备 Id |
+| ITuyaPressedRightMenuListener | 点击按钮回调获取当前面板设备 Id，如果是群组面板则返回 groupId 否则为 -1 |
 **示例代码**
 ``` java
 TuyaPanelSDK.getPanelInstance().setPressedRightMenuListener(new ITuyaPressedRightMenuListener() {
     @Override
-    public void onPressedRightMenu(String deviceId) {
+    public void onPressedRightMenu(String deviceId,String groupId) {
         Toast.makeText(TuyaPanelSDK.getCurrentActivity(), "PanelMore", Toast.LENGTH_SHORT).show();
     }
 });

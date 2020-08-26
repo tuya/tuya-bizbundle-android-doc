@@ -55,7 +55,7 @@ Tuya Smart Android Device Control BizBundle is the core container of Tuya Smart 
 	dependencies {
            implementation fileTree(dir: 'libs', include: ['*.jar'])
       //panel
-      implementation 'com.tuya.smart:panel-sdk:0.5.7'
+      implementation 'com.tuya.smart:panel-sdk:0.6.0'
       //homesdk
       implementation 'com.alibaba:fastjson:1.1.67.android'
       implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
@@ -300,12 +300,12 @@ void setPressedRightMenuListener(ITuyaPressedRightMenuListener listener);
 
 | Parameter                          | Description                            |
 | ----------------------------- | ------------------------------- |
-| ITuyaPressedRightMenuListener | the deviceId  |
+| ITuyaPressedRightMenuListener | the deviceId，groupId  |
 **Example**
 ``` java
 TuyaPanelSDK.getPanelInstance().setPressedRightMenuListener(new ITuyaPressedRightMenuListener() {
     @Override
-    public void onPressedRightMenu(String deviceId) {
+    public void onPressedRightMenu(String deviceId,long groupId) {
         Toast.makeText(TuyaPanelSDK.getCurrentActivity(), "PanelMore", Toast.LENGTH_SHORT).show();
     }
 });
