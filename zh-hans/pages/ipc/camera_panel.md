@@ -14,7 +14,7 @@
 
 ### 集成准备
 
-TuyaCameraPanelSDK 是基于 [涂鸦全屋智能 SDK](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/zh-hans/) 3.13.0 版本上开发
+TuyaCameraPanelSDK 是基于 [涂鸦全屋智能 SDK](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/zh-hans/) 3.17.6 版本上开发
 
 集成 TuyaCameraPanelSDK 之前，需要做以下工作：
 
@@ -104,23 +104,26 @@ TuyaCameraPanelSDK 是基于 [涂鸦全屋智能 SDK](https://tuyainc.github.io/
    
    dependencies {
       //***** 涂鸦摄像头面板SDK模块 必须依赖 开始 ****//
-      implementation 'com.tuya.smart:tuyasmart-camera-panel-sdk:1.0.1'
+      implementation 'com.tuya.smart:tuyasmart-camera-panel-sdk:3.17.6-open.1'
       //涂鸦RN面板 依赖
-      implementation 'com.tuya.smart:panel-sdk:0.5.0'
+      implementation 'com.tuya.smart:panel-sdk:0.5.6'
+      // 商城组件 购买h5页面
+      implementation 'com.tuya.smart:tuyasmart-webcontainer:3.12.6r125-h1'
+      implementation 'com.tuya.smart:tuyasmart-appshell:3.10.0'
       //homesdk
-      implementation 'com.alibaba:fastjson:1.1.67.android'
-      implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
-      implementation 'com.tuya.smart:tuyasmart:3.17.0'
+      implementation "com.tuya.smart:tuyasmart-TuyaRNApi:5.26.13-open"
+      implementation 'com.tuya.smart:tuyasmart:3.17.6'
       //*****  涂鸦摄像头面板SDK模块 必须依赖 结束 ****//
    
       //第三方组件依赖
+      implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
       implementation 'com.weigan:loopView:0.1.1'
       implementation 'com.facebook.infer.annotation:infer-annotation:0.11.2'
       implementation 'com.facebook.soloader:soloader:0.8.0'
       implementation 'com.facebook.fresco:fresco:1.3.0'
       implementation 'com.facebook.fresco:animated-gif:1.3.0'
       implementation "com.facebook.fresco:imagepipeline-okhttp3:1.3.0"
-      implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
+      implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
       implementation 'javax.inject:javax.inject:1'
       implementation 'com.alibaba:fastjson:1.1.67.android'
       implementation 'com.facebook.react:react-native:0.51.1.11'
@@ -188,7 +191,19 @@ TuyaCameraPanelSDK 是基于 [涂鸦全屋智能 SDK](https://tuyainc.github.io/
       </application>
    ```
 
-5. 混淆配置
+5. Theme 配置
+
+   ```xml
+      <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+           <!-- default configuration start -->
+            <item name="app_bg_color">@color/app_bg_color</item>
+           <item name="list_line_color">@color/list_line_color</item>
+           <item name="status_bg_color">@color/status_bg_color</item>
+           <!-- default configuration end -->
+       </style>
+   ```
+   
+6. 混淆配置
 
    在 proguard-rules.pro 文件配置相应混淆配置
 
