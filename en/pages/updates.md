@@ -12,3 +12,4 @@
 | 0.5.6   |      2020.7.28    | fix panel group bug|
 | 0.5.7   |      2020.8.14    | fix panel sence bug|
 | 0.6.0   |      2020.8.26    | onPressedRightMenu add groupId  |
+| 0.6.1   |      2020.8.31    | fix bluemesh panel bug  |
