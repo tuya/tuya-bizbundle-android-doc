@@ -96,7 +96,6 @@
 3. 配置业务模块的 build.gradle
 
   ```groovy
-    apply plugin: 'tymodule-config'
     apply plugin: 'kotlin-android-extensions'
     apply plugin: 'kotlin-android'
 	
