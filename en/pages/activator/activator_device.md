@@ -102,7 +102,6 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 
 
   ```groovy
-    apply plugin: 'tymodule-config'
     apply plugin: 'kotlin-android-extensions'
     apply plugin: 'kotlin-android'
 	
