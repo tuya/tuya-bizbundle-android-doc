@@ -91,6 +91,7 @@
 	    implementation 'com.tuya.android:mist-litho-core:1.3.30'
 	    implementation 'com.tuya.smart:tuyasmart-scene:3.17.6r141-rc.15'
 	    implementation 'com.tuya.smart:tuyasmart-scene-business-api:3.17.6r141-rc.1'
+	    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'  
 	    //scene require end  	
     }
   ```
