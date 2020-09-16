@@ -55,7 +55,7 @@
 	dependencies {
       implementation fileTree(dir: 'libs', include: ['*.jar'])
       //panel
-      implementation 'com.tuya.smart:panel-sdk:0.6.2'
+      implementation 'com.tuya.smart:panel-sdk:0.6.3'
       //homesdk
       implementation 'com.alibaba:fastjson:1.1.67.android'
       implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
@@ -217,6 +217,11 @@ public class BizBundleFamilyServiceImpl extends AbsBizBundleFamilyService {
     @Override
     public void setCurrentHomeId(long homeId) {
         mHomeId = homeId;
+    }
+    
+    @Override
+    public void shiftCurrentFamily(long l, String s) {
+        mHomeId = l;
     }
 }
 ```
