@@ -17,7 +17,6 @@
   ``` groovy
   allprojects {
       repositories {
-        maven { url 'https://maven-other.tuya.com/repository/maven-public/' }
         maven { url 'https://jitpack.io' }
       }
   }
@@ -56,6 +55,11 @@
       implementation fileTree(dir: 'libs', include: ['*.jar'])
       //panel
       implementation 'com.tuya.smart:panel-sdk:0.6.3'
+      // 已废弃 com.facebook.react:react-native:0.51.1.11
+      // 请使用涂鸦版本 react-native
+      implementation 'com.tuya.smart:react-native:0.51.1.11'
+      //tuya react-native
+
       //homesdk
       implementation 'com.alibaba:fastjson:1.1.67.android'
       implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
@@ -68,13 +72,12 @@
       implementation 'com.facebook.fresco:fresco:1.3.0'
       implementation "com.facebook.fresco:imagepipeline-okhttp3:1.3.0"
       implementation 'com.alibaba:fastjson:1.1.67.android'
-      implementation 'com.facebook.react:react-native:0.51.1.11'
       implementation 'org.apache.commons:commons-compress:1.9'
       implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
       implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
       implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
       implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+      implementation 'com.android.support.constraint:constraint-layout:1.1.3'
   	}
   ```
 

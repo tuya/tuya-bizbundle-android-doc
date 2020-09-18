@@ -11,16 +11,6 @@
 
 在 Android Studio 中建立你的工程,接入公版 SDK 并配置完成
 
-### 根目录的 build.gradle 配置
-
-```java
-allprojects {
-      repositories {
-        maven { url 'https://maven-other.tuya.com/repository/maven-public/' }
-        maven { url 'https://jitpack.io' }
-      }
-  }
-```
 
 ### module 的 build.gradle 配置
 

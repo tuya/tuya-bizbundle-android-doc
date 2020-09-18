@@ -10,17 +10,6 @@ The FAQ BizBundle provides an Android container that hosts "questions and feedba
 
 Create your project in Android Studio, connect to the public SDK and configure it
 
-### The build.gradle configuration of the root directory
-
-```java
-allprojects {
-      repositories {
-        maven { url 'https://maven-other.tuya.com/repository/maven-public/' }
-        maven { url 'https://jitpack.io' }
-      }
-  }
-```
-
 ### module's build.gradle configuration
 
 ```java

@@ -31,8 +31,6 @@ Before integrating TuyaCameraPanelSDK, you need to do the following:
    allprojects {
       repositories {
           //***** required start ****//
-          maven { url "https://maven-other.tuya.com/repository/maven-releases/"}
-            maven { url "https://maven-other.tuya.com/repository/maven-snapshots/" }
           maven { url 'https://jitpack.io' }
           //***** required end ****//
           google()
@@ -43,10 +41,7 @@ Before integrating TuyaCameraPanelSDK, you need to do the following:
    
    buildscript {
       repositories {
-          maven {url "https://maven-other.tuya.com/repository/maven-releases/"}
-            maven { url "https://maven-other.tuya.com/repository/maven-snapshots/" }
           maven { url "https://jitpack.io" }
-          mavenLocal()
           mavenCentral()
           google()
           jcenter()
@@ -67,7 +62,6 @@ Before integrating TuyaCameraPanelSDK, you need to do the following:
 
    ```java
    apply plugin: 'com.android.application'
-   // apply plugin: 'tymodule-config'
    
    android {
       //... 

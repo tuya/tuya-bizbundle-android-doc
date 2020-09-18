@@ -69,23 +69,16 @@
 	buildscript {
 	
 	     repositories {
-	         maven {
-	             url 'https://maven-other.tuya.com/repository/maven-public/'
-	         }
              google()
              jcenter()
 	     }
 	     dependencies {
-	         classpath 'com.tuya.android.module:tymodule-config:0.4.0-SNAPSHOT'
 	         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 	     }
 	 }
 	
 	 allprojects {
 	     repositories {
-	         maven {
-	             url 'https://maven-other.tuya.com/repository/maven-public/'
-	         }
              google()
              jcenter()
 	     }
@@ -96,7 +89,6 @@
 3. 配置业务模块的 build.gradle
 
   ```groovy
-    apply plugin: 'tymodule-config'
     apply plugin: 'kotlin-android-extensions'
     apply plugin: 'kotlin-android'
 	
@@ -126,7 +118,7 @@
 	    implementation 'com.tuya.smart:tuyasmart:3.17.0-beta1'
 	    
 	    //home 业务 API
-	    implementation 'com.tuya.smart:tuya-commonbiz-api:1.0.0-SNAPSHOT'
+	    implementation 'com.tuya.smart:tuya-commonbiz-api:1.0.1'
 	    
 	    //扫码工具
 	    implementation 'com.tuya.smart:tuyasmart-qrcode:3.12.0r123-rc.2'

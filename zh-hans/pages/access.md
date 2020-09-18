@@ -17,7 +17,7 @@
 ``` java
 allprojects {
     repositories {
-        maven { url 'https://maven-other.tuya.com/repository/maven-public/' }
+        jcenter()
     }
 }
 ```
@@ -31,3 +31,6 @@ android {
 }
 ```
 
+> 【注意事项】
+>  我们目前已经废弃 maven { url 'https://maven-other.tuya.com/repository/maven-public/' } 使用 jcenter()
+>  使用 SNAPSHOT 版本的组件请去除 SNAPSHOT 后缀

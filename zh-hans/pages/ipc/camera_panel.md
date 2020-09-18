@@ -36,8 +36,6 @@ TuyaCameraPanelSDK 是基于 [涂鸦全屋智能 SDK](https://tuyainc.github.io/
    allprojects {
       repositories {
           //***** required start ****//
-          maven { url "https://maven-other.tuya.com/repository/maven-releases/"}
-            maven { url "https://maven-other.tuya.com/repository/maven-snapshots/" }
           maven { url 'https://jitpack.io' }
           //***** required end ****//
           google()
@@ -48,9 +46,6 @@ TuyaCameraPanelSDK 是基于 [涂鸦全屋智能 SDK](https://tuyainc.github.io/
    
    buildscript {
       repositories {
-          maven {url "https://maven-other.tuya.com/repository/maven-releases/"}
-            maven { url "https://maven-other.tuya.com/repository/maven-snapshots/" }
-          maven { url "https://jitpack.io" }
           mavenLocal()
           mavenCentral()
           google()
@@ -61,7 +56,6 @@ TuyaCameraPanelSDK 是基于 [涂鸦全屋智能 SDK](https://tuyainc.github.io/
           classpath 'com.antfortune.freeline:gradle:0.8.6'
           classpath "com.google.protobuf:protobuf-gradle-plugin:0.8.6"
           classpath 'org.apache.httpcomponents:httpclient:4.4.1'
-          classpath 'com.tuya.android.module:tymodule-config:0.4.0'
       }
    }
    ```
