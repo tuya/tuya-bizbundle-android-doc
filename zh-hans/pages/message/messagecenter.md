@@ -57,7 +57,7 @@ dependencies {
     implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
     
     implementation 'com.tuya.smart:tuyasmart-panel:3.17.6r141-open'
-    implementation 'com.facebook.react:react-native:0.51.1.11'
+    implementation 'com.tuya.smart:react-native:0.51.1.11'
       
     implementation 'com.tuya.smart:tuyasmart-message:3.17.6r141-rc.2'
     implementation 'com.tuya.smart:tuyasmart-message-api:3.17.6r141-rc.1'
