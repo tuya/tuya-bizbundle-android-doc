@@ -236,14 +236,14 @@ public class BizBundleFamilyServiceImpl extends AbsBizBundleFamilyService {
 
 After fetching the family list, set the current family homeId with a service call
 
-**示例代码**
+**sample code**
 ``` java
     AbsBizBundleFamilyService service = MicroServiceManager.getInstance().findServiceByInterface(AbsBizBundleFamilyService.class.getName());
     //set the current family homeId
     service.setCurrentHomeId(homeBean.getHomeId());
 ```
 
-### Open panel
+### Open device panel
 
 Enter the panel page through the homeId and deviceId.The homeId and deviceId need to be obtained through the public Tuya Smart SDK interface.
 
@@ -288,6 +288,52 @@ final ITuyaPanelLoadCallback mLoadCallback = new ITuyaPanelLoadCallback() {
 };
     
 TuyaPanelSDK.getPanelInstance().gotoPanelViewControllerWithDevice(TuyaPanelSDK.getCurrentActivity(), mCurrentHomeId, bean.getDevId(), mLoadCallback);
+```
+### Open group panel
+
+Enter the group panel page through the homeId and groupId.The homeId and groupId need to be obtained through the public Tuya Smart SDK interface.
+
+**Declaration**
+
+Open group panel
+
+``` java
+gotoPanelViewControllerWithGroup(Activity activity, long homeId, long groupId, ITuyaPanelLoadCallback loadCallback);
+```
+**Parameter**
+
+| Parameter         | Description                                                         |
+| ------------ | ------------------------------------------------------------ |
+| activity     | Open the panel context must to be used TuyaPanelSDK.getCurrentActivity() |
+| homeId       | The homeId need to be obtained through the public Tuya Smart Android SDK interface                              |
+| groupId        | The groupId need to be obtained through the public Tuya Smart Android SDK interface.                                |
+| loadCallback | Status Callback when the panel loads                                                |
+
+**Example**
+``` java
+final ITuyaPanelLoadCallback mLoadCallback = new ITuyaPanelLoadCallback() {
+    @Override
+    public void onStart(String deviceId) {
+        ProgressUtil.showLoading(TuyaPanelSDK.getCurrentActivity(), "Loading...");
+    }
+    
+    @Override
+    public void onError(String deviceId, int code, String error) {
+        ProgressUtil.hideLoading();
+        Toast.makeText(getApplicationContext(), "errorCode:" + code + ",errorString:" + error, Toast.LENGTH_LONG).show();
+    }
+    
+    @Override
+    public void onSuccess(String deviceId) {
+        ProgressUtil.hideLoading();
+    }
+    
+    @Override
+    public void onProgress(String deviceId, int progress) {
+    }
+};
+    
+TuyaPanelSDK.getPanelInstance().gotoPanelViewControllerWithGroup(TuyaPanelSDK.getCurrentActivity(), mCurrentHomeId, bean.getGroupId(), mLoadCallback);
 ```
 
 ### Panel Delegate
