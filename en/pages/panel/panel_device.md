@@ -17,7 +17,6 @@ Tuya Smart Android Device Control BizBundle is the core container of Tuya Smart 
   ``` groovy
   allprojects {
       repositories {
-          maven { url 'https://maven-other.tuya.com/repository/maven-public/' }
           maven { url 'https://jitpack.io' }
       }
   }
@@ -56,6 +55,10 @@ Tuya Smart Android Device Control BizBundle is the core container of Tuya Smart 
            implementation fileTree(dir: 'libs', include: ['*.jar'])
       //panel
       implementation 'com.tuya.smart:panel-sdk:0.6.3'
+      // deprecated com.facebook.react:react-native:0.51.1.11
+      // use tuya react-native
+      implementation 'com.tuya.smart:react-native:0.51.1.11'
+
       //homesdk
       implementation 'com.alibaba:fastjson:1.1.67.android'
       implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.12.3'
@@ -68,7 +71,6 @@ Tuya Smart Android Device Control BizBundle is the core container of Tuya Smart 
       implementation 'com.facebook.fresco:fresco:1.3.0'
       implementation "com.facebook.fresco:imagepipeline-okhttp3:1.3.0"
       implementation 'com.alibaba:fastjson:1.1.67.android'
-      implementation 'com.facebook.react:react-native:0.51.1.11'
       implementation 'org.apache.commons:commons-compress:1.9'
       implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
       implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'

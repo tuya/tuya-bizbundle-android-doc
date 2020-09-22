@@ -12,24 +12,6 @@ H5 商城业务包提供了承载 「App 商城」的 Android 容器，让您的
 
    在 Android Studio 中建立你的工程,接入公版 SDK 并配置完成
 
-### 根目录的 build.gradle 配置
-
-``` groovy
-  buildscript {
-      repositories {
-          maven { url 'https://maven-other.tuya.com/repository/maven-public/' }
-      }
-      dependencies {
-          classpath 'com.tuya.android.module:tymodule-config:0.4.0-SNAPSHOT'
-      }
-  }
-
-  allprojects {
-      repositories {
-          maven { url 'https://maven-other.tuya.com/repository/maven-public/' }
-      }
-  }
-```
 
 ### module 的 build.gradle 配置
 
@@ -50,7 +32,7 @@ H5 商城业务包提供了承载 「App 商城」的 Android 容器，让您的
     implementation "com.tuya.smart:tuyasmart-picture:3.12.0r123"
     implementation "com.tuya.smart:tuyasmart-rpc:3.12.0r123"
     implementation "com.tuya.smart:tuyasmart-video:3.12.6r125"
-    implementation "com.tuya.smart:tuyasmart-ipc-videoview:3.13.0r125-open-SNAPSHOT"
+    implementation "com.tuya.smart:tuyasmart-ipc-videoview:3.13.0r125-open"
     //require end
 
     implementation 'com.alibaba:fastjson:1.1.67.android'

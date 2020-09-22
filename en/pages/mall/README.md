@@ -11,25 +11,6 @@ H5 Mall provides an container that hosts the "App mall", so that your app has po
 
 Build your project in the Android Studio and integrate Tuyasmart HomeSDK
 
-### Configure the root build.gradle
-
-  ``` groovy
-  buildscript {
-      repositories {
-          maven { url 'https://maven-other.tuya.com/repository/maven-public/' }
-      }
-      dependencies {
-          classpath 'com.tuya.android.module:tymodule-config:0.4.0-SNAPSHOT'
-      }
-  }
-
-  allprojects {
-      repositories {
-          maven { url 'https://maven-other.tuya.com/repository/maven-public/' }
-      }
-  }
-  ```
-
 ### Configure the module build.gradle
 
   ``` groovy
@@ -49,7 +30,7 @@ Build your project in the Android Studio and integrate Tuyasmart HomeSDK
     implementation "com.tuya.smart:tuyasmart-picture:3.12.0r123"
     implementation "com.tuya.smart:tuyasmart-rpc:3.12.0r123"
     implementation "com.tuya.smart:tuyasmart-video:3.12.6r125"
-    implementation "com.tuya.smart:tuyasmart-ipc-videoview:3.13.0r125-open-SNAPSHOT"
+    implementation "com.tuya.smart:tuyasmart-ipc-videoview:3.13.0r125-open"
     //require end
 
     implementation 'com.alibaba:fastjson:1.1.67.android'

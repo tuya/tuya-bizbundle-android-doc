@@ -73,24 +73,17 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 	buildscript {
 	
 	     repositories {
-	         maven {
-	             url 'https://maven-other.tuya.com/repository/maven-public/'
-	         }
              google()
              jcenter()
 	     }
 	     dependencies {
 	         classpath 'com.android.tools.build:gradle:3.1.4'
-	         classpath 'com.tuya.android.module:tymodule-config:0.4.0-SNAPSHOT'
 	         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 	     }
 	 }
 	
 	 allprojects {
 	     repositories {
-	         maven {
-	             url 'https://maven-other.tuya.com/repository/maven-public/'
-	         }
              google()
              jcenter()
 	     }

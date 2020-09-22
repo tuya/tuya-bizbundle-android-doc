@@ -11,16 +11,6 @@
 
 在 Android Studio 中建立你的工程,接入公版 SDK 并配置完成
 
-### 根目录的 build.gradle 配置
-
-```java
-allprojects {
-      repositories {
-        maven { url 'https://maven-other.tuya.com/repository/maven-public/' }
-        maven { url 'https://jitpack.io' }
-      }
-  }
-```
 
 ### module 的 build.gradle 配置
 
@@ -67,7 +57,7 @@ dependencies {
     implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
     
     implementation 'com.tuya.smart:tuyasmart-panel:3.17.6r141-open'
-    implementation 'com.facebook.react:react-native:0.51.1.11'
+    implementation 'com.tuya.smart:react-native:0.51.1.11'
       
     implementation 'com.tuya.smart:tuyasmart-message:3.17.6r141-rc.2'
     implementation 'com.tuya.smart:tuyasmart-message-api:3.17.6r141-rc.1'
