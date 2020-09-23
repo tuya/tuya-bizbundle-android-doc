@@ -51,7 +51,7 @@ dependencies {
 
     implementation 'com.tuya.smart:tuyasmart-video:3.12.6r125'
     implementation 'com.tuya.smart:tuyasmart-imagepipeline-okhttp3:0.0.1'
-    implementation 'com.tuya.smart:tuya-commonbiz-api:1.0.0-SNAPSHOT'
+    implementation 'com.tuya.smart:tuya-commonbiz-api:1.0.0'
     implementation 'com.tuya.android.module:tymodule-annotation:0.0.8'
     implementation 'com.tuya.smart:tuyasmart-stencilmodel:3.17.0r139-rc.2'
       

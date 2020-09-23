@@ -124,7 +124,7 @@ The Biz Bundle is based on [Tuya Smart SDK](https://tuyainc.github.io/tuyasmart_
 	    implementation 'com.tuya.smart:tuyasmart:3.17.0-beta1'
 	    
 	    //home business api
-	    implementation 'com.tuya.smart:tuya-commonbiz-api:1.0.0-SNAPSHOT'
+	    implementation 'com.tuya.smart:tuya-commonbiz-api:1.0.0'
 	    
 	    //Scan code tool
 	    implementation 'com.tuya.smart:tuyasmart-qrcode:3.12.0r123-rc.2'

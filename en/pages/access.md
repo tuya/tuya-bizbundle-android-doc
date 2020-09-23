@@ -1,5 +1,11 @@
 # Integration
 
+**[NOTE]**
+
+>  We have currently deprecated maven { url 'https://maven-other.tuya.com/repository/maven-public/' } using jcenter()
+
+>  Please remove the SNAPSHOT suffix for components using the release version.
+
 ## BizBundle Profiles
 
 ### assets profile
@@ -30,8 +36,4 @@ android {
     }
 }
 ```
-
->  [NOTE]
->  We have currently deprecated maven { url 'https://maven-other.tuya.com/repository/maven-public/' } using jcenter()
->  Please remove the SNAPSHOT suffix for components using the release version.
 

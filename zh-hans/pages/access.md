@@ -1,5 +1,10 @@
 # 框架接入
 
+**【注意事项】**
+>  我们目前已经废弃 maven { url 'https://maven-other.tuya.com/repository/maven-public/' } 请使用 jcenter() 源
+
+>  使用 SNAPSHOT 版本的组件请去除 SNAPSHOT 后缀
+
 ## 业务包配置文件
 
 ### assets 配置
@@ -30,7 +35,3 @@ android {
     }
 }
 ```
-
-> 【注意事项】
->  我们目前已经废弃 maven { url 'https://maven-other.tuya.com/repository/maven-public/' } 使用 jcenter()
->  使用 SNAPSHOT 版本的组件请去除 SNAPSHOT 后缀
