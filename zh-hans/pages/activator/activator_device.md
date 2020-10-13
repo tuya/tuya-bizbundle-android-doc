@@ -146,7 +146,7 @@
         implementation 'com.tuya.smart:tuya-config-ble:1.0.1'
         implementation 'com.tuya.smart:tuya-config-ble-api:1.0.1'
         implementation 'com.tuya.smart:tuya-config-api:1.0.3'
-        implementation 'com.tuya.smart:tuya-config:1.0.9'
+        implementation 'com.tuya.smart:tuya-config:1.0.10'
 	    
 	    //扫码业务组件
 	    implementation 'com.tuya.smart:tuya-scan:1.0.1'
