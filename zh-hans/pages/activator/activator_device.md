@@ -146,7 +146,9 @@
         implementation 'com.tuya.smart:tuya-config-ble:1.0.1'
         implementation 'com.tuya.smart:tuya-config-ble-api:1.0.1'
         implementation 'com.tuya.smart:tuya-config-api:1.0.3'
-        implementation 'com.tuya.smart:tuya-config:1.0.10'
+        implementation 'com.tuya.smart:tuya-config:1.0.11'
+	implementation 'com.google.android:flexbox:1.0.0'
+
 	    
 	    //扫码业务组件
 	    implementation 'com.tuya.smart:tuya-scan:1.0.1'
