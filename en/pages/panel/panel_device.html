@@ -1,0 +1,886 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Device Control · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ipc/camera_panel.html" />
+    
+    
+    <link rel="prev" href="../activator/activator_device.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../prepare.html">
+            
+                <a href="../prepare.html">
+            
+                    
+                    Prepare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../access.html">
+            
+                <a href="../access.html">
+            
+                    
+                    Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../biznav.html">
+            
+                <a href="../biznav.html">
+            
+                    
+                    BizBundle Navigation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../mall/">
+            
+                <a href="../mall/">
+            
+                    
+                    H5 Mall
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../activator/activator_device.html">
+            
+                <a href="../activator/activator_device.html">
+            
+                    
+                    Device Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="panel_device.html">
+            
+                <a href="panel_device.html">
+            
+                    
+                    Device Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../ipc/camera_panel.html">
+            
+                <a href="../ipc/camera_panel.html">
+            
+                    
+                    IPC Device BizBundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../scene.html">
+            
+                <a href="../scene.html">
+            
+                    
+                    Scene BizBundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../faq/faq.html">
+            
+                <a href="../faq/faq.html">
+            
+                    
+                    FAQ BizBundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../message/messagecenter.html">
+            
+                <a href="../message/messagecenter.html">
+            
+                    
+                    Message Center BizBundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../updates.html">
+            
+                <a href="../updates.html">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Device Control</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#device-control-bizbundle"><b>1. </b>Device Control BizBundle</a></li><ul><li><span class="title-icon "></span><a href="#features-overview"><b>1.1. </b>Features Overview</a></li><li><span class="title-icon "></span><a href="#integrated-device-control-biz-bundle"><b>1.2. </b>Integrated Device Control Biz Bundle</a></li><ul><li><span class="title-icon "></span><a href="#create-project"><b>1.2.1. </b>Create Project</a></li><li><span class="title-icon "></span><a href="#configure-the-root-buildgradle"><b>1.2.2. </b>Configure the root build.gradle</a></li><li><span class="title-icon "></span><a href="#configure-the-module-buildgradle"><b>1.2.3. </b>Configure the module build.gradle</a></li><li><span class="title-icon "></span><a href="#optional-configuration"><b>1.2.4. </b>Optional Configuration</a></li><li><span class="title-icon "></span><a href="#configure-theme"><b>1.2.5. </b>Configure Theme</a></li><li><span class="title-icon "></span><a href="#configure-the-progurad"><b>1.2.6. </b>Configure the progurad</a></li><li><span class="title-icon "></span><a href="#init-tuya-smart-android-device-control-biz-bundle-in-the-application"><b>1.2.7. </b>Init Tuya Smart Android Device Control Biz Bundle in the Application</a></li></ul><li><span class="title-icon "></span><a href="#function-call"><b>1.3. </b>Function Call</a></li><ul><li><span class="title-icon "></span><a href="#implementation-familyservice"><b>1.3.1. </b>Implementation FamilyService</a></li><li><span class="title-icon "></span><a href="#set-family-homeid"><b>1.3.2. </b>Set Family HomeId</a></li><li><span class="title-icon "></span><a href="#open-device-panel"><b>1.3.3. </b>Open device panel</a></li><li><span class="title-icon "></span><a href="#open-group-panel"><b>1.3.4. </b>Open group panel</a></li><li><span class="title-icon "></span><a href="#panel-delegate"><b>1.3.5. </b>Panel Delegate</a></li><li><span class="title-icon "></span><a href="#release-panle-resource"><b>1.3.6. </b>Release panle resource</a></li><li><span class="title-icon "></span><a href="#clear-panel-cache"><b>1.3.7. </b>Clear panel cache</a></li></ul><li><span class="title-icon "></span><a href="#errorcode"><b>1.4. </b>ErrorCode</a></li></ul></ul></div><a href="#device-control-bizbundle" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="device-control-bizbundle"><a name="device-control-bizbundle" class="anchor-navigation-ex-anchor" href="#device-control-bizbundle"><i class="fa fa-link" aria-hidden="true"></i></a>1. Device Control BizBundle</h1>
+<h2 id="features-overview"><a name="features-overview" class="anchor-navigation-ex-anchor" href="#features-overview"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Features Overview</h2>
+<p>Tuya Smart Android Device Control BizBundle is the core container of Tuya Smart Device Control Panel, based on the Tuya Smart Android Home SDK, it provides the interface package for loading and controlling the device control panel to speed up the application development process. It mainly includes the following functions:</p>
+<ul>
+<li>Load Device Panel (Supported hardware device type: WIFI&#x3001;Zigbee&#x3001;Mesh&#x3001;BLE)</li>
+<li>Device Panel Control (Supported Device and Group Control, Unsupported Group Manager)</li>
+<li>Device Alarm</li>
+</ul>
+<h2 id="integrated-device-control-biz-bundle"><a name="integrated-device-control-biz-bundle" class="anchor-navigation-ex-anchor" href="#integrated-device-control-biz-bundle"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Integrated Device Control Biz Bundle</h2>
+<h3 id="create-project"><a name="create-project" class="anchor-navigation-ex-anchor" href="#create-project"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Create Project</h3>
+<p>   Build your project in the Android Studio and integrate Tuyasmart HomeSDK</p>
+<h3 id="configure-the-root-buildgradle"><a name="configure-the-root-buildgradle" class="anchor-navigation-ex-anchor" href="#configure-the-root-buildgradle"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. Configure the root build.gradle</h3>
+<pre class="language-"><code class="lang-groovy">  allprojects <span class="token punctuation">{</span>
+      repositories <span class="token punctuation">{</span>
+          maven <span class="token punctuation">{</span> url <span class="token string">&apos;https://jitpack.io&apos;</span> <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="configure-the-module-buildgradle"><a name="configure-the-module-buildgradle" class="anchor-navigation-ex-anchor" href="#configure-the-module-buildgradle"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. Configure the module build.gradle</h3>
+<pre class="language-"><code class="lang-groovy">  android <span class="token punctuation">{</span>
+        defaultConfig <span class="token punctuation">{</span>
+          ndk <span class="token punctuation">{</span>
+              abiFilters <span class="token string">&quot;armeabi-v7a&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;arm64-v8a&quot;</span>
+          <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+
+      repositories <span class="token punctuation">{</span>
+          flatDir <span class="token punctuation">{</span>
+              dirs <span class="token string">&apos;libs&apos;</span>
+          <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+      compileOptions <span class="token punctuation">{</span>
+          sourceCompatibility <span class="token number">1.8</span>
+          targetCompatibility <span class="token number">1.8</span>
+      <span class="token punctuation">}</span>
+
+      packagingOptions <span class="token punctuation">{</span>
+          pickFirst <span class="token string">&apos;lib/*/libc++_shared.so&apos;</span>
+          pickFirst <span class="token string">&apos;lib/*/libgnustl_shared.so&apos;</span>
+      <span class="token punctuation">}</span>
+
+    lintOptions <span class="token punctuation">{</span>
+          abortOnError <span class="token boolean">false</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+    dependencies <span class="token punctuation">{</span>
+           implementation <span class="token function">fileTree</span><span class="token punctuation">(</span>dir<span class="token punctuation">:</span> <span class="token string">&apos;libs&apos;</span><span class="token punctuation">,</span> include<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;*.jar&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+      <span class="token comment">//panel</span>
+      implementation <span class="token string">&apos;com.tuya.smart:panel-sdk:0.6.3&apos;</span>
+      <span class="token comment">// deprecated com.facebook.react:react-native:0.51.1.11</span>
+      <span class="token comment">// use tuya react-native</span>
+      implementation <span class="token string">&apos;com.tuya.smart:react-native:0.51.1.11&apos;</span>
+
+      <span class="token comment">//homesdk</span>
+      implementation <span class="token string">&apos;com.alibaba:fastjson:1.1.67.android&apos;</span>
+      implementation <span class="token string">&apos;com.squareup.okhttp3:okhttp-urlconnection:3.12.3&apos;</span>
+      implementation <span class="token string">&apos;com.tuya.smart:tuyasmart:3.17.0&apos;</span>
+      <span class="token comment">//third</span>
+      implementation <span class="token string">&apos;com.weigan:loopView:0.1.1&apos;</span>
+      implementation <span class="token string">&apos;com.facebook.infer.annotation:infer-annotation:0.11.2&apos;</span>
+      implementation <span class="token string">&apos;javax.inject:javax.inject:1&apos;</span>
+      implementation <span class="token string">&apos;com.facebook.soloader:soloader:0.8.2&apos;</span>
+      implementation <span class="token string">&apos;com.facebook.fresco:fresco:1.3.0&apos;</span>
+      implementation <span class="token string">&quot;com.facebook.fresco:imagepipeline-okhttp3:1.3.0&quot;</span>
+      implementation <span class="token string">&apos;com.alibaba:fastjson:1.1.67.android&apos;</span>
+      implementation <span class="token string">&apos;org.apache.commons:commons-compress:1.9&apos;</span>
+      implementation <span class="token string">&apos;com.github.PhilJay:MPAndroidChart:v3.0.3&apos;</span>
+      implementation <span class="token string">&apos;io.reactivex.rxjava2:rxandroid:2.0.1&apos;</span>
+      implementation <span class="token string">&apos;io.reactivex.rxjava2:rxjava:2.1.7&apos;</span>
+      implementation <span class="token string">&apos;com.readystatesoftware.systembartint:systembartint:1.0.3&apos;</span>
+      implementation <span class="token string">&apos;com.android.support.constraint:constraint-layout:1.1.3&apos;</span>
+      <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="optional-configuration"><a name="optional-configuration" class="anchor-navigation-ex-anchor" href="#optional-configuration"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.4. Optional Configuration</h3>
+<h5 id="amap---china-only-"><a name="amap---china-only-" class="anchor-navigation-ex-anchor" href="#amap---china-only-"><i class="fa fa-link" aria-hidden="true"></i></a><a name="amap---china-only-" class="plugin-anchor" href="#amap---china-only-"><i class="fa fa-link" aria-hidden="true"></i></a>Amap  ( China only )</h5>
+<pre class="language-"><code class="lang-groovy">  implementation <span class="token string">&apos;com.amap.api:search:6.9.2&apos;</span>
+  implementation <span class="token string">&apos;com.amap.api:map2d:5.2.0&apos;</span>
+  implementation <span class="token string">&apos;com.tuya.smart:tuyasmart-react-native-amap:1.0.0&apos;</span>
+</code></pre>
+<h5 id="googlemap--non-china-only-"><a name="googlemap--non-china-only-" class="anchor-navigation-ex-anchor" href="#googlemap--non-china-only-"><i class="fa fa-link" aria-hidden="true"></i></a><a name="googlemap--non-china-only-" class="plugin-anchor" href="#googlemap--non-china-only-"><i class="fa fa-link" aria-hidden="true"></i></a>GoogleMap ( Non-China only )</h5>
+<pre class="language-"><code class="lang-groovy">  implementation <span class="token string">&apos;com.tuya.smart:tuyasmart-react-native-googlemap:1.0.0&apos;</span>
+  <span class="token function">implementation</span><span class="token punctuation">(</span><span class="token string">&apos;com.google.android.gms:play-services-maps:16.1.0&apos;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      exclude group<span class="token punctuation">:</span> <span class="token string">&apos;com.android.support&apos;</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+<h5 id="qq-music"><a name="qq-music" class="anchor-navigation-ex-anchor" href="#qq-music"><i class="fa fa-link" aria-hidden="true"></i></a><a name="qq-music" class="plugin-anchor" href="#qq-music"><i class="fa fa-link" aria-hidden="true"></i></a>QQ Music</h5>
+<pre class="language-"><code class="lang-groovy">  <span class="token function">implementation</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string">&apos;qqmusic-innovation-aidl-api-sdk-1.00-SNAPSHOT-release&apos;</span><span class="token punctuation">,</span> ext<span class="token punctuation">:</span> <span class="token string">&apos;aar&apos;</span><span class="token punctuation">)</span>
+  implementation <span class="token string">&apos;com.tuya.smart.rnplugin:tyrctspeakermanager:1.0.15-open&apos;</span>
+  <span class="token keyword">def</span> tvsVer <span class="token operator">=</span> <span class="token string">&apos;2.3.0&apos;</span>
+  implementation <span class="token string">&quot;com.tencent.yunxiaowei.dmsdk:core:$tvsVer&quot;</span>
+  implementation <span class="token string">&quot;com.tencent.yunxiaowei.webviewsdk:webviewsdk:$tvsVer&quot;</span>
+</code></pre>
+<h5 id="sweeper"><a name="sweeper" class="anchor-navigation-ex-anchor" href="#sweeper"><i class="fa fa-link" aria-hidden="true"></i></a><a name="sweeper" class="plugin-anchor" href="#sweeper"><i class="fa fa-link" aria-hidden="true"></i></a>Sweeper</h5>
+<pre class="language-"><code class="lang-groovy">  implementation <span class="token string">&apos;com.tuya.smart:tuyasmart-TuyaRNApi-sweeper:5.26.13-open&apos;</span>
+</code></pre>
+<h3 id="configure-theme"><a name="configure-theme" class="anchor-navigation-ex-anchor" href="#configure-theme"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.5. Configure Theme</h3>
+<pre class="language-"><code class="lang-xml">      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>AppTheme<span class="token punctuation">&quot;</span></span> <span class="token attr-name">parent</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Theme.AppCompat.Light.NoActionBar<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- default configuration start --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>item</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app_bg_color<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>@color/app_bg_color<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>item</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>item</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>list_line_color<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>@color/list_line_color<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>item</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- default configuration end --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h3 id="configure-the-progurad"><a name="configure-the-progurad" class="anchor-navigation-ex-anchor" href="#configure-the-progurad"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.6. Configure the progurad</h3>
+<pre class="language-"><code>  # react-native
+  -keep,allowobfuscation @interface com.facebook.common.internal.DoNotStrip
+  -keep,allowobfuscation @interface com.facebook.proguard.annotations.DoNotStrip
+  -keep,allowobfuscation @interface com.facebook.proguard.annotations.KeepGettersAndSetters
+  # Do not strip any method/class that is annotated with @DoNotStrip
+  -keep @com.facebook.proguard.annotations.DoNotStrip class *
+  -keep @com.facebook.common.internal.DoNotStrip class *
+  -keepclassmembers class * {
+      @com.facebook.proguard.annotations.DoNotStrip *;
+      @com.facebook.common.internal.DoNotStrip *;
+  }
+  -keepclassmembers @com.facebook.proguard.annotations.KeepGettersAndSetters class * {
+    void set*(***);
+    *** get*();
+  }
+  -keep class * extends com.facebook.react.bridge.JavaScriptModule { *; }
+  -keep class * extends com.facebook.react.bridge.NativeModule { *; }
+  -keepclassmembers,includedescriptorclasses class * { native <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>methods</span><span class="token punctuation">&gt;</span></span>; }
+  -keepclassmembers class *  { @com.facebook.react.uimanager.UIProp <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fields</span><span class="token punctuation">&gt;</span></span>; }
+  -keepclassmembers class *  { @com.facebook.react.uimanager.annotations.ReactProp <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>methods</span><span class="token punctuation">&gt;</span></span>; }
+  -keepclassmembers class *  { @com.facebook.react.uimanager.annotations.ReactPropGroup <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>methods</span><span class="token punctuation">&gt;</span></span>; }
+  -dontwarn com.facebook.react.**
+  -keep,includedescriptorclasses class com.facebook.react.bridge.** { *; }
+
+  #Amap
+  -dontwarn com.amap.**
+  -keep class com.amap.api.maps.** { *; }
+  -keep class com.autonavi.** { *; }
+  -keep class com.amap.api.trace.** { *; }
+  -keep class com.amap.api.navi.** { *; }
+  -keep class com.autonavi.** { *; }
+  -keep class com.amap.api.location.** { *; }
+  -keep class com.amap.api.fence.** { *; }
+  -keep class com.autonavi.aps.amapapi.model.** { *; }
+  -keep class com.amap.api.maps.model.** { *; }
+  -keep class com.amap.api.services.** { *; }
+
+  #Google Play Services
+  -keep class com.google.android.gms.common.** {*;}
+  -keep class com.google.android.gms.ads.identifier.** {*;}
+  -keepattributes Signature,*Annotation*,EnclosingMethod
+  -dontwarn com.google.android.gms.**
+
+  #MPAndroidChart
+  -keep class com.github.mikephil.charting.** { *; }
+  -dontwarn com.github.mikephil.charting.**
+
+  -keep class com.tuya.**.**{*;}
+  -dontwarn com.tuya.**.**
+</code></pre><h3 id="init-tuya-smart-android-device-control-biz-bundle-in-the-application"><a name="init-tuya-smart-android-device-control-biz-bundle-in-the-application" class="anchor-navigation-ex-anchor" href="#init-tuya-smart-android-device-control-biz-bundle-in-the-application"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.7. Init Tuya Smart Android Device Control Biz Bundle in the Application</h3>
+<pre class="language-"><code class="lang-java">  <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TuyaSmartApp</span> <span class="token keyword">extends</span> <span class="token class-name">Application</span> <span class="token punctuation">{</span>
+      <span class="token annotation punctuation">@Override</span>
+      <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+          <span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">setDebugMode</span><span class="token punctuation">(</span><span class="token class-name">BuildConfig</span><span class="token punctuation">.</span>DEBUG<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token comment">// you must remove TuyaHomeSdk.init(),then add TuyaPanelSDK.init()</span>
+          <span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span><span class="token string">&quot; TUYA_SMART_APPKEY&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;TUYA_SMART_SECRET&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+          <span class="token comment">// fail router listener</span>
+          <span class="token class-name">TuyaWrapper</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">RouteEventListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onFaild</span><span class="token punctuation">(</span><span class="token keyword">int</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">UrlBuilder</span> urlBuilder<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token class-name">ToastUtil</span><span class="token punctuation">.</span><span class="token function">shortToast</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> urlBuilder<span class="token punctuation">.</span>originUrl<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token comment">//register FamilyService,set the current family homeId,BizBundleFamilyServiceImpl is sample code</span>
+          <span class="token class-name">TuyaWrapper</span><span class="token punctuation">.</span><span class="token function">registerService</span><span class="token punctuation">(</span><span class="token class-name">AbsBizBundleFamilyService</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">BizBundleFamilyServiceImpl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+<h2 id="function-call"><a name="function-call" class="anchor-navigation-ex-anchor" href="#function-call"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Function Call</h2>
+<h3 id="implementation-familyservice"><a name="implementation-familyservice" class="anchor-navigation-ex-anchor" href="#implementation-familyservice"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. Implementation FamilyService</h3>
+<p>you must extends AbsBizBundleFamilyService class&#xFF0C;set the current family homeId</p>
+<p><strong>sample code</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BizBundleFamilyServiceImpl</span> <span class="token keyword">extends</span> <span class="token class-name">AbsBizBundleFamilyService</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">long</span> mHomeId<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">long</span> <span class="token function">getCurrentHomeId</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> mHomeId<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setCurrentHomeId</span><span class="token punctuation">(</span><span class="token keyword">long</span> homeId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        mHomeId <span class="token operator">=</span> homeId<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">shiftCurrentFamily</span><span class="token punctuation">(</span><span class="token keyword">long</span> l<span class="token punctuation">,</span> <span class="token class-name">String</span> s<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        mHomeId <span class="token operator">=</span> l<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="set-family-homeid"><a name="set-family-homeid" class="anchor-navigation-ex-anchor" href="#set-family-homeid"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. Set Family HomeId</h3>
+<p>After fetching the family list, set the current family homeId with a service call</p>
+<p><strong>sample code</strong></p>
+<pre class="language-"><code class="lang-java">    <span class="token class-name">AbsBizBundleFamilyService</span> service <span class="token operator">=</span> <span class="token class-name">MicroServiceManager</span><span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">findServiceByInterface</span><span class="token punctuation">(</span><span class="token class-name">AbsBizBundleFamilyService</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//set the current family homeId</span>
+    service<span class="token punctuation">.</span><span class="token function">setCurrentHomeId</span><span class="token punctuation">(</span>homeBean<span class="token punctuation">.</span><span class="token function">getHomeId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="open-device-panel"><a name="open-device-panel" class="anchor-navigation-ex-anchor" href="#open-device-panel"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. Open device panel</h3>
+<p>Enter the panel page through the homeId and deviceId.The homeId and deviceId need to be obtained through the public Tuya Smart SDK interface.</p>
+<p><strong>Declaration</strong></p>
+<p>Open Panel</p>
+<pre class="language-"><code class="lang-java"><span class="token function">gotoPanelViewControllerWithDevice</span><span class="token punctuation">(</span><span class="token class-name">Activity</span> activity<span class="token punctuation">,</span> <span class="token keyword">long</span> homeId<span class="token punctuation">,</span> <span class="token class-name">String</span> deviceId<span class="token punctuation">,</span> <span class="token class-name">ITuyaPanelLoadCallback</span> loadCallback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>Parameter</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>activity</td>
+<td>Open the panel context must to be used TuyaPanelSDK.getCurrentActivity()</td>
+</tr>
+<tr>
+<td>homeId</td>
+<td>The homeId need to be obtained through the public Tuya Smart Android SDK interface</td>
+</tr>
+<tr>
+<td>deviceId</td>
+<td>The deviceId need to be obtained through the public Tuya Smart Android SDK interface.</td>
+</tr>
+<tr>
+<td>loadCallback</td>
+<td>Status Callback when the panel loads</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">final</span> <span class="token class-name">ITuyaPanelLoadCallback</span> mLoadCallback <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaPanelLoadCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onStart</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ProgressUtil</span><span class="token punctuation">.</span><span class="token function">showLoading</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;Loading...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">,</span> <span class="token keyword">int</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ProgressUtil</span><span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token function">getApplicationContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;errorCode:&quot;</span> <span class="token operator">+</span> code <span class="token operator">+</span> <span class="token string">&quot;,errorString:&quot;</span> <span class="token operator">+</span> error<span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_LONG<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ProgressUtil</span><span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onProgress</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">,</span> <span class="token keyword">int</span> progress<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getPanelInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">gotoPanelViewControllerWithDevice</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mCurrentHomeId<span class="token punctuation">,</span> bean<span class="token punctuation">.</span><span class="token function">getDevId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mLoadCallback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="open-group-panel"><a name="open-group-panel" class="anchor-navigation-ex-anchor" href="#open-group-panel"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.4. Open group panel</h3>
+<p>Enter the group panel page through the homeId and groupId.The homeId and groupId need to be obtained through the public Tuya Smart SDK interface.</p>
+<p><strong>Declaration</strong></p>
+<p>Open group panel</p>
+<pre class="language-"><code class="lang-java"><span class="token function">gotoPanelViewControllerWithGroup</span><span class="token punctuation">(</span><span class="token class-name">Activity</span> activity<span class="token punctuation">,</span> <span class="token keyword">long</span> homeId<span class="token punctuation">,</span> <span class="token keyword">long</span> groupId<span class="token punctuation">,</span> <span class="token class-name">ITuyaPanelLoadCallback</span> loadCallback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>Parameter</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>activity</td>
+<td>Open the panel context must to be used TuyaPanelSDK.getCurrentActivity()</td>
+</tr>
+<tr>
+<td>homeId</td>
+<td>The homeId need to be obtained through the public Tuya Smart Android SDK interface</td>
+</tr>
+<tr>
+<td>groupId</td>
+<td>The groupId need to be obtained through the public Tuya Smart Android SDK interface.</td>
+</tr>
+<tr>
+<td>loadCallback</td>
+<td>Status Callback when the panel loads</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">final</span> <span class="token class-name">ITuyaPanelLoadCallback</span> mLoadCallback <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ITuyaPanelLoadCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onStart</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ProgressUtil</span><span class="token punctuation">.</span><span class="token function">showLoading</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;Loading...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">,</span> <span class="token keyword">int</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ProgressUtil</span><span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token function">getApplicationContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;errorCode:&quot;</span> <span class="token operator">+</span> code <span class="token operator">+</span> <span class="token string">&quot;,errorString:&quot;</span> <span class="token operator">+</span> error<span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_LONG<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onSuccess</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ProgressUtil</span><span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onProgress</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">,</span> <span class="token keyword">int</span> progress<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getPanelInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">gotoPanelViewControllerWithGroup</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mCurrentHomeId<span class="token punctuation">,</span> bean<span class="token punctuation">.</span><span class="token function">getGroupId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> mLoadCallback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="panel-delegate"><a name="panel-delegate" class="anchor-navigation-ex-anchor" href="#panel-delegate"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.5. Panel Delegate</h3>
+<h4 id="click-panle-toolbar-right-menu"><a name="click-panle-toolbar-right-menu" class="anchor-navigation-ex-anchor" href="#click-panle-toolbar-right-menu"><i class="fa fa-link" aria-hidden="true"></i></a><a name="click-panle-toolbar-right-menu" class="plugin-anchor" href="#click-panle-toolbar-right-menu"><i class="fa fa-link" aria-hidden="true"></i></a>Click panle toolbar right menu</h4>
+<p>Open other pages through the callback on the toolbar right menu of the panel</p>
+<p><strong>Declaration</strong></p>
+<p>Click the toolbar right menu get the current panel deviceId</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">void</span> <span class="token function">setPressedRightMenuListener</span><span class="token punctuation">(</span><span class="token class-name">ITuyaPressedRightMenuListener</span> listener<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>Parameter</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ITuyaPressedRightMenuListener</td>
+<td>the deviceId&#xFF0C;groupId</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getPanelInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setPressedRightMenuListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ITuyaPressedRightMenuListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onPressedRightMenu</span><span class="token punctuation">(</span><span class="token class-name">String</span> deviceId<span class="token punctuation">,</span><span class="token keyword">long</span> groupId<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Toast</span><span class="token punctuation">.</span><span class="token function">makeText</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;PanelMore&quot;</span><span class="token punctuation">,</span> <span class="token class-name">Toast</span><span class="token punctuation">.</span>LENGTH_SHORT<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="get-unrealized-router-address"><a name="get-unrealized-router-address" class="anchor-navigation-ex-anchor" href="#get-unrealized-router-address"><i class="fa fa-link" aria-hidden="true"></i></a><a name="get-unrealized-router-address" class="plugin-anchor" href="#get-unrealized-router-address"><i class="fa fa-link" aria-hidden="true"></i></a>Get unrealized router address</h4>
+<p>Get unrealized routing address to jump to the corresponding page</p>
+<p><strong>Declaration</strong></p>
+<p>Go to the panel page and click the button to jump to the route, which is called if there is an unimplemented route.</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">void</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token class-name">Application</span> app<span class="token punctuation">,</span><span class="token class-name">ITuyaOpenUrlListener</span> listener<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><strong>Parameter</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RouteEventListener</td>
+<td>Unimplemented route callbacks</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre class="language-"><code class="lang-java">    <span class="token class-name">TuyaWrapper</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">RouteEventListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token annotation punctuation">@Override</span>
+        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onFaild</span><span class="token punctuation">(</span><span class="token keyword">int</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">UrlBuilder</span> urlBuilder<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// routing primitive address urlBuilder.originUrl</span>
+            <span class="token class-name">ToastUtil</span><span class="token punctuation">.</span><span class="token function">shortToast</span><span class="token punctuation">(</span><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getCurrentActivity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> urlBuilder<span class="token punctuation">.</span>originUrl<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="release-panle-resource"><a name="release-panle-resource" class="anchor-navigation-ex-anchor" href="#release-panle-resource"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.6. Release panle resource</h3>
+<p>Call this method to release resources when exiting the application</p>
+<p><strong>Example</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">TuyaPanel</span><span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">onDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="clear-panel-cache"><a name="clear-panel-cache" class="anchor-navigation-ex-anchor" href="#clear-panel-cache"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.7. Clear panel cache</h3>
+<p>The panel resources files will be stored in the current app storage directory. you can call this method to clean up.</p>
+<p><strong>Example</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">TuyaPanelSDK</span><span class="token punctuation">.</span><span class="token function">getPanelInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">clearPanelCache</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="errorcode"><a name="errorcode" class="anchor-navigation-ex-anchor" href="#errorcode"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. ErrorCode</h2>
+<table>
+<thead>
+<tr>
+<th>Error Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1901</td>
+<td>Panel resources download failed</td>
+</tr>
+<tr>
+<td>1902</td>
+<td>multi language package download failed</td>
+</tr>
+<tr>
+<td>1903</td>
+<td>Unsupported device type</td>
+</tr>
+<tr>
+<td>1904</td>
+<td>No device in the group</td>
+</tr>
+<tr>
+<td>1905</td>
+<td>home id is fiale</td>
+</tr>
+<tr>
+<td>1906</td>
+<td>DeviceBean is null</td>
+</tr>
+<tr>
+<td>1907</td>
+<td>No available panel resources found</td>
+</tr>
+<tr>
+<td>1908</td>
+<td>Incorrect firmware version</td>
+</tr>
+<tr>
+<td>1909</td>
+<td>Unknow Error</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../activator/activator_device.html" class="navigation navigation-prev " aria-label="Previous page: Device Configuration">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ipc/camera_panel.html" class="navigation navigation-next " aria-label="Next page: IPC Device BizBundle">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Device Control","level":"1.4.3","depth":2,"next":{"title":"IPC Device BizBundle","level":"1.4.4","depth":2,"path":"pages/ipc/camera_panel.md","ref":"./pages/ipc/camera_panel.md","articles":[]},"previous":{"title":"Device Configuration","level":"1.4.2","depth":2,"path":"pages/activator/activator_device.md","ref":"./pages/activator/activator_device.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","anchor-navigation-ex","expandable-chapters-small","pageview-count","language-picker","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism.css"],"lang":{"java":"java"},"ignore":["sequence"]},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/TuyaInc/tuyasmart_bizbundle_android_doc"},"splitter":{},"search":{},"addcssjs":{"js":["../scripts/mermaid.min.js","../scripts/index.js"],"css":[]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"pageview-count":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"pages/panel/panel_device.md","mtime":"2020-10-14T07:26:27.292Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-14T07:27:18.713Z"},"basePath":"../..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
