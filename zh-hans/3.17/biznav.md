@@ -10,5 +10,3 @@
 | TuyaSmartDeviceActivatorBizBundle      | Provide Device Configuration function   | 可选 |
 | TuyaSmartDeviceControlBizBundle      | 提供设备控制功能   | 可选 |
 | ITuyaSceneBusinessService      | 提供场景创建编辑功能   | 可选 |
-|  TuyaSmartCameraPanelBizBundle	| 提供IPC 功能 | 可选 |
-
