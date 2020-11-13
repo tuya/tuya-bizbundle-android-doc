@@ -10,16 +10,17 @@
 
 ### assets 配置
 
-[module_app.json](https://github.com/tuya/tuya-ui-bizbundle-android-config-values/tree/main/assets) 和 [x_platform_config.json](https://github.com/tuya/tuya-ui-bizbundle-android-config-values/tree/main/assets) 为服务化配置文件，请拷贝至 app 目录下的 assets 文件夹下即可生效。[必选]
+[module_app.json](https://github.com/tuya/tuya-ui-bizbundle-android-config-values/tree/main/assets/) 和 [x_platform_config.json](https://github.com/tuya/tuya-ui-bizbundle-android-config-values/tree/main/assets/) 为服务化配置文件，请拷贝至 app 目录下的 assets 文件夹下即可生效。[必选]
 
 ### res 配置
 
-[res/values/ty_config.xml](https://github.com/tuya/tuya-ui-bizbundle-android-config-values/blob/main/res/values/ty_config.xml)业务包配置文件及默认颜色[必选]
+[res/values/ty_config.xml](https://github.com/tuya/tuya-ui-bizbundle-android-config-values/blob/main/res/values/)业务包配置文件及默认颜色[必选]
 
-[res/values](https://github.com/tuya/tuya-ui-bizbundle-android-config-values/tree/main/res)多语言资源文件，可根据情况选择配置 [可选]
+[res/values](https://github.com/tuya/tuya-ui-bizbundle-android-config-values/blob/main/res/values/)多语言资源文件，可根据情况选择配置 [可选]
 
 ### style 配置
-[res/values/styles.xml](https://github.com/tuya/tuya-ui-bizbundle-android-config-values/blob/main/res/values/styles.xml)多语言资源文件，可根据情况选择配置 [必选]
+
+[res/values/styles.xml](https://github.com/tuya/tuya-ui-bizbundle-android-config-values/blob/main/res/values/)业务包主题文件[必选]
 
 ``` xml
     <!-- Base application theme. -->

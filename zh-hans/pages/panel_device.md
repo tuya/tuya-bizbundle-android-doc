@@ -15,9 +15,9 @@
 ### module 的 build.gradle 配置
 
   ``` groovy
-      dependencies {
-        api 'com.tuya.smart:tuyasmart-bizbundle-panel:3.20.0-5'
-      }
+	  dependencies {
+      api 'com.tuya.smart:tuyasmart-bizbundle-panel:3.20.0-5'
+    }
   ```
 
   ####  可选配置 根据面板功能依赖
