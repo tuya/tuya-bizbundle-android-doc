@@ -13,3 +13,12 @@
 ## 集成涂鸦全屋智能 SDK
 
 集成涂鸦全屋智能 SDK，是接入涂鸦业务包的必要前提，具体集成方式可参考[集成 SDK](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/zh-hans/resource/Integrated.html)
+
+
+
+
+
+
+
+
+

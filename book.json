@@ -1,9 +1,11 @@
 {
   "plugins": [
-    "js-sequence-diagram-full@>=0.3.1",
+    "addcssjs",
+    "richquotes",
     "prism",
-    "-highlight",
+    "-hightlight",
     "anchors",
+    "js-sequence-diagram-full@>=0.3.1",
     "splitter",
     "github",
     "anchor-navigation-ex",
