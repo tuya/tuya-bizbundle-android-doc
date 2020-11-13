@@ -59,8 +59,9 @@ dependencies {
     implementation 'com.tuya.smart:tuyasmart-panel:3.17.6r141-open'
     implementation 'com.tuya.smart:react-native:0.51.1.11'
       
-    implementation 'com.tuya.smart:tuyasmart-message:3.17.6r141-rc.2'
     implementation 'com.tuya.smart:tuyasmart-message-api:3.17.6r141-rc.1'
+    implementation 'com.tuya.smart:tuyasmart-message:3.17.6r141-rc.3'
+    implementation 'com.tuya.smart:tuyasmart-panel-reactnative:3.17.6r141.6-open'
 }
 ```
 

@@ -2,5 +2,5 @@
 
 ---
 
-* [English](https://tuyainc.github.io/tuyasmart_bizbundle_android_doc/en/)
+* [English](https://tuyainc.github.io/tuyasmart_bizbundle_android_doc/en/) 
 * [简体中文](https://tuyainc.github.io/tuyasmart_bizbundle_android_doc/zh-hans/)
