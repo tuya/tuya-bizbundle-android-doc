@@ -1,7 +1,7 @@
 * [Introduction](./README.md)
 * [Prepare](./pages/prepare.md)
 * [Integration](./pages/access.md)
-* [BizBundle Navigation](./pages/biznav.md)
+* [UI BizBundle Navigation](./pages/biznav.md)
   * [H5 Mall](./pages/mall.md)
   * [Device Configuration](./pages/activator_device.md)
   * [Device Control](./pages/panel_device.md)

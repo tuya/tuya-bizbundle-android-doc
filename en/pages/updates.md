@@ -3,10 +3,10 @@
 # 3.20.0 
 | bizbundle |  note|
 | :------:|:---:|
-| H5 mall  |   性能优化|
-| 设备配网  | 配网能力优化 <br> 体验优化 |
-| 设备控制  |   新增蓝牙群组控制 <br> 性能优化 |
-| 摄像机  |    业务包功能更完善，优化体验 |
-| 场景业务包  |  细节体验优化 <br> 动作支持步进能力 |
-| 常见问题与反馈  |  性能优化  |
-| 消息中心  |    性能优化|
+| H5 mall  |   performance optimization|
+| Device Configuration  | capacity optimization <br> experience optimization |
+| Device Control  |   bluetooth group control <br> performance optimization |
+| IPC Device  |     experience optimization |
+| Scene  |   experience optimization <br> action support stepping capability |
+| FAQ  |  performance optimization  |
+| Message Center  |   performance optimization|
