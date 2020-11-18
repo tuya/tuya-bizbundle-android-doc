@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>FAQ · GitBook</title>
+        <title>Cloud Service · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -92,10 +92,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="updates.html" />
+    <link rel="next" href="faq/faq.html" />
     
     
-    <link rel="prev" href="message/messagecenter.html" />
+    <link rel="prev" href="scene.html" />
     
 
     </head>
@@ -242,7 +242,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.6" data-path="camera_cloud_video_service.html">
+        <li class="chapter active" data-level="1.4.6" data-path="camera_cloud_video_service.html">
             
                 <a href="camera_cloud_video_service.html">
             
@@ -286,7 +286,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="biz_faq.html">
+        <li class="chapter " data-level="1.5" data-path="biz_faq.html">
             
                 <a href="biz_faq.html">
             
@@ -523,7 +523,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >FAQ</a>
+        <a href=".." >Cloud Service</a>
     </h1>
 </div>
 
@@ -538,28 +538,86 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#faq"><b>1. </b>FAQ</a></li><li><span class="title-icon "></span><a href="#mall"><b>2. </b>Mall</a></li><li><span class="title-icon "></span><a href="#device-configuration"><b>3. </b>Device Configuration</a></li><li><span class="title-icon "></span><a href="#device-control"><b>4. </b>Device Control</a></li><li><span class="title-icon "></span><a href="#ipc-device"><b>5. </b>IPC Device</a></li><li><span class="title-icon "></span><a href="#scene"><b>6. </b>Scene</a></li><li><span class="title-icon "></span><a href="#faq_1"><b>7. </b>FAQ</a></li><li><span class="title-icon "></span><a href="#message-center"><b>8. </b>Message Center</a></li></ul></div><a href="#faq" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="faq"><a name="faq" class="anchor-navigation-ex-anchor" href="#faq"><i class="fa fa-link" aria-hidden="true"></i></a>1. FAQ</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#cloud-service-bizbundle"><b>1. </b>Cloud Service BizBundle</a></li><ul><li><span class="title-icon "></span><a href="#integrated-bizbundle"><b>1.1. </b>Integrated BizBundle</a></li><li><span class="title-icon "></span><a href="#function"><b>1.2. </b>Function</a></li><ul><li><span class="title-icon "></span><a href="#start-cloud-service-purchase-activity"><b>1.2.1. </b>Start cloud service purchase activity</a></li><li><span class="title-icon "></span><a href="#release-resource"><b>1.2.2. </b>Release resource</a></li></ul></ul></ul></div><a href="#cloud-service-bizbundle" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="cloud-service-bizbundle"><a name="cloud-service-bizbundle" class="anchor-navigation-ex-anchor" href="#cloud-service-bizbundle"><i class="fa fa-link" aria-hidden="true"></i></a>1. Cloud Service BizBundle</h1>
+<p>Tuya smart cameras provide cloud storage video services, and cloud storage services can be activated through this bizBundle. After active cloud storage service, you can view and play cloud storage videos through <a href="https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/en/resource/ipc/cloud_video.html" target="_blank">Tuya Smart Camera SDK</a>.</p>
+<h2 id="integrated-bizbundle"><a name="integrated-bizbundle" class="anchor-navigation-ex-anchor" href="#integrated-bizbundle"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Integrated BizBundle</h2>
+<ol>
+<li><a href="access.html">Access service package framework</a></li>
+<li>Cloud storage service is strongly related to account, and needs to integrate graffiti cloud user management. Refer to <a href="https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/en/resource/User.html" target="_blank">integrated document</a></li>
+<li>Configure build.gradle in the module directory</li>
+</ol>
+<pre class="language-"><code class="lang-java">dependencies <span class="token punctuation">{</span>
+        implementation <span class="token string">&apos;com.tuya.smart:tuyasmart-bizbundle-cloud_storage:3.20.0-5&apos;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="function"><a name="function" class="anchor-navigation-ex-anchor" href="#function"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Function</h2>
+<h3 id="start-cloud-service-purchase-activity"><a name="start-cloud-service-purchase-activity" class="anchor-navigation-ex-anchor" href="#start-cloud-service-purchase-activity"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Start cloud service purchase activity</h3>
+<p><strong>Declaration</strong></p>
+<p>Jump to the cloud storage purchase H5 page</p>
+<blockquote>
+<p>Cloud storage services are strongly associated with user systems. Therefore, it needs to be called after use login.</p>
+</blockquote>
+<pre class="language-"><code>public void buyCloudStorage(Context mContext, DeviceBean deviceBean, String homeId, AbsCloudCallback callback);
+</code></pre><p><strong>Parameters</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">question</th>
-<th style="text-align:center">solutions</th>
+<th>Parameter</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">No response at the click of a button</td>
-<td style="text-align:center">check logcat content appearances router not implement or service not implement&#xFF0C;you should implement it<a href="access.html#application-init">access</a></td>
+<td>context</td>
+<td>context</td>
+</tr>
+<tr>
+<td>deviceBean</td>
+<td>device info</td>
+</tr>
+<tr>
+<td>homeId</td>
+<td>The family ID is obtained through the home SDK interface</td>
+</tr>
+<tr>
+<td>callback</td>
+<td>callback when error</td>
 </tr>
 </tbody>
 </table>
-<h1 id="mall"><a name="mall" class="anchor-navigation-ex-anchor" href="#mall"><i class="fa fa-link" aria-hidden="true"></i></a>2. Mall</h1>
-<h1 id="device-configuration"><a name="device-configuration" class="anchor-navigation-ex-anchor" href="#device-configuration"><i class="fa fa-link" aria-hidden="true"></i></a>3. Device Configuration</h1>
-<h1 id="device-control"><a name="device-control" class="anchor-navigation-ex-anchor" href="#device-control"><i class="fa fa-link" aria-hidden="true"></i></a>4. Device Control</h1>
-<h1 id="ipc-device"><a name="ipc-device" class="anchor-navigation-ex-anchor" href="#ipc-device"><i class="fa fa-link" aria-hidden="true"></i></a>5. IPC Device</h1>
-<h1 id="scene"><a name="scene" class="anchor-navigation-ex-anchor" href="#scene"><i class="fa fa-link" aria-hidden="true"></i></a>6. Scene</h1>
-<h1 id="faq_1"><a name="faq_1" class="anchor-navigation-ex-anchor" href="#faq_1"><i class="fa fa-link" aria-hidden="true"></i></a>7. FAQ</h1>
-<h1 id="message-center"><a name="message-center" class="anchor-navigation-ex-anchor" href="#message-center"><i class="fa fa-link" aria-hidden="true"></i></a>8. Message Center</h1>
+<p><strong>Example</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token function">findViewById</span><span class="token punctuation">(</span><span class="token class-name">R</span><span class="token punctuation">.</span>id<span class="token punctuation">.</span>buy_btn<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setOnClickListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">.</span><span class="token class-name">OnClickListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token annotation punctuation">@Override</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token class-name">View</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//get service</span>
+    <span class="token class-name">AbsCameraCloudPurchaseService</span> cameraCloudService <span class="token operator">=</span> <span class="token class-name">MicroServiceManager</span><span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">findServiceByInterface</span><span class="token punctuation">(</span><span class="token class-name">AbsCameraCloudPurchaseService</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>cameraCloudService <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      cameraCloudService<span class="token punctuation">.</span><span class="token function">buyCloudStorage</span><span class="token punctuation">(</span><span class="token class-name">CameraCloudStorageActivity</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">,</span>
+                                         <span class="token class-name">TuyaHomeSdk</span><span class="token punctuation">.</span><span class="token function">getDataInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDeviceBean</span><span class="token punctuation">(</span>devId<span class="token punctuation">)</span><span class="token punctuation">,</span>
+                                         <span class="token class-name">String</span><span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token class-name">FamilyManager</span><span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getCurrentHomeId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">AbsCloudCallback</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                           <span class="token annotation punctuation">@Override</span>
+                                           <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onError</span><span class="token punctuation">(</span><span class="token class-name">String</span> errorCode<span class="token punctuation">,</span> <span class="token class-name">String</span> errorMessage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                             <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onError</span><span class="token punctuation">(</span>errorCode<span class="token punctuation">,</span> errorMessage<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                           <span class="token punctuation">}</span>
+                                         <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="release-resource"><a name="release-resource" class="anchor-navigation-ex-anchor" href="#release-resource"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. Release resource</h3>
+<p><strong>Example</strong></p>
+<p>Jumping to the cloud storage purchase page involves time-consuming operations such as network requests, so resources need to be released when the called page is destroyed.</p>
+<pre class="language-"><code>public void destroy();
+</code></pre><p><strong>Example</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token annotation punctuation">@Override</span>
+<span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">AbsCameraCloudPurchaseService</span> cameraCloudService <span class="token operator">=</span> <span class="token class-name">MicroServiceManager</span><span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">findServiceByInterface</span><span class="token punctuation">(</span><span class="token class-name">AbsCameraCloudPurchaseService</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>cameraCloudService <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      cameraCloudService<span class="token punctuation">.</span><span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
 
                                 
                                 </section>
@@ -587,12 +645,12 @@
 
             
                 
-                <a href="message/messagecenter.html" class="navigation navigation-prev " aria-label="Previous page: Message Center">
+                <a href="scene.html" class="navigation navigation-prev " aria-label="Previous page: Scene ">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="updates.html" class="navigation navigation-next " aria-label="Next page: Changelog">
+                <a href="faq/faq.html" class="navigation navigation-next " aria-label="Next page: FAQ">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -603,7 +661,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"FAQ","level":"1.5","depth":1,"next":{"title":"Changelog","level":"1.6","depth":1,"path":"pages/updates.md","ref":"./pages/updates.md","articles":[]},"previous":{"title":"Message Center","level":"1.4.8","depth":2,"path":"pages/message/messagecenter.md","ref":"./pages/message/messagecenter.md","articles":[]},"dir":"ltr"},"config":{"plugins":["addcssjs","richquotes","prism","-hightlight","anchors","js-sequence-diagram-full@>=0.3.1","splitter","github","anchor-navigation-ex","expandable-chapters-small","pageview-count","language-picker","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism.css"],"lang":{"java":"java"},"ignore":["sequence"]},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/TuyaInc/tuyasmart_bizbundle_android_doc"},"livereload":{},"splitter":{},"search":{},"addcssjs":{"css":[],"js":["../scripts/mermaid.min.js","../scripts/index.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"pageview-count":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"pages/biz_faq.md","mtime":"2020-11-17T10:24:38.100Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-18T08:39:33.682Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Cloud Service","level":"1.4.6","depth":2,"next":{"title":"FAQ","level":"1.4.7","depth":2,"path":"pages/faq/faq.md","ref":"./pages/faq/faq.md","articles":[]},"previous":{"title":"Scene ","level":"1.4.5","depth":2,"path":"pages/scene.md","ref":"./pages/scene.md","articles":[]},"dir":"ltr"},"config":{"plugins":["addcssjs","richquotes","prism","-hightlight","anchors","js-sequence-diagram-full@>=0.3.1","splitter","github","anchor-navigation-ex","expandable-chapters-small","pageview-count","language-picker","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism.css"],"lang":{"java":"java"},"ignore":["sequence"]},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/TuyaInc/tuyasmart_bizbundle_android_doc"},"livereload":{},"splitter":{},"search":{},"addcssjs":{"css":[],"js":["../scripts/mermaid.min.js","../scripts/index.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"pageview-count":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"pages/camera_cloud_video_service.md","mtime":"2020-11-12T11:37:18.539Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-18T08:39:33.682Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>
