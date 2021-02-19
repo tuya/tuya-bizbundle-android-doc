@@ -3,6 +3,5 @@
 ## TuyaSmart Android BizBundle Documentation
 For more documentation, please check:
 
-* [English Version](https://tuyainc.github.io/tuyasmart_bizbundle_android_doc/en/) 
-* [简体中文版](https://tuyainc.github.io/tuyasmart_bizbundle_android_doc/zh-hans/)
+* [Android BizBundle SDK](https://developer.tuya.com/en/docs/app-development/android-bizbundle-sdk/introduction?id=Ka8qhzjygzfau) 
 
